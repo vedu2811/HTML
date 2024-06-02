@@ -1,6 +1,7 @@
 body {
   border: solid 3px black;
   font-family: sans-serif;
+  line-height: 1.4;
 }
 h2 {
   text-align: center;
@@ -8,26 +9,33 @@ h2 {
   font-size: 16px;
 }
 .price {
-  font-size: 20px;
+  font-size: 24px;
 }
 .free {
-  color: #444;
+  color: #777;
   font-size: 12px;
 }
 .upper {
   text-transform: uppercase;
 }
-li {
+.list {
   list-style: square;
 }
-button {
+.btn {
   background-color: black;
   color: white;
 }
-button:hover {
+.btn:hover {
   background-color: white;
   color: black;
+  cursor: pointer;
+  border: none;
 }
-a:hover {
+.More-info:link,
+.More-info:visited {
+  color: black;
+}
+.More-info:hover,
+.More-info:active {
   text-decoration: none;
 }
