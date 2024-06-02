@@ -1,6 +1,7 @@
 body {
   color: #444;
   font-family: sans-serif;
+  border-top: solid 10px #1098ad;
 }
 h1,
 h2,
