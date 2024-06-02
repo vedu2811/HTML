@@ -43,3 +43,7 @@ li {
 #copyright {
   font-size: 16px;
 }
+.related-authors {
+  font-size: 18px;
+  font-weight: bold;
+}
