@@ -1,13 +1,7 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
+body {
   color: #444;
+  font-family: sans-serif;
 }
-
 h1,
 h2,
 h3 {
@@ -104,3 +98,17 @@ a:active {
   font-style: italic;
 }
 /* LVHA */
+
+/* Resolving Conflicts */
+/* #copyright{
+  color:red;
+}
+.copyright{
+  color:green;
+}
+.text{
+  color:blue;
+}
+footer p{
+  color:yellow !important;
+} */
