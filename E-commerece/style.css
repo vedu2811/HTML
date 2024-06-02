@@ -1,0 +1,8 @@
+body {
+  border: solid 3px black;
+}
+h2 {
+  text-align: center;
+  background-color: #f7f7f7;
+  text-transform: uppercase;
+}
