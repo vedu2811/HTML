@@ -1,8 +1,33 @@
 body {
   border: solid 3px black;
+  font-family: sans-serif;
 }
 h2 {
   text-align: center;
   background-color: #f7f7f7;
+  font-size: 16px;
+}
+.price {
+  font-size: 20px;
+}
+.free {
+  color: #444;
+  font-size: 12px;
+}
+.upper {
   text-transform: uppercase;
+}
+li {
+  list-style: square;
+}
+button {
+  background-color: black;
+  color: white;
+}
+button:hover {
+  background-color: white;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
 }
