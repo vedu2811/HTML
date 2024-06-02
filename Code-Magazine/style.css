@@ -1,3 +1,8 @@
+/* Universal Selector */
+/* * {
+  border-top: solid 10px #1098ad;
+} */
+
 body {
   color: #444;
   font-family: sans-serif;
@@ -112,4 +117,7 @@ a:active {
 }
 footer p{
   color:yellow !important;
+} */
+/* nav {
+  font-size: 18px;
 } */
