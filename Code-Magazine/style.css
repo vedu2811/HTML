@@ -26,6 +26,13 @@ h2 {
 }
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  /* MARGIN COLLAPSING: 
+  <p> HAS A MARGIN-BOTTOM OF 15PX 
+  AND H3 HAS MARGIN-TOP OF 40PX 
+  BUT THE SPACE BETWEEN H3 AND PARAGRAPH WILL BE 40PX 
+  (LARGER ONE) */
 }
 h4 {
   font-size: 20px;
@@ -35,10 +42,12 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
 }
 li {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-left: 50px;
 }
 /* footer p {
   font-size: 16px;
@@ -66,6 +75,12 @@ li {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
+  margin-bottom: 60px;
+}
+.post-header {
+  margin-bottom: 40px;
+}
+article {
   margin-bottom: 60px;
 }
 aside {
