@@ -7,7 +7,7 @@
 }
 .full-body {
   width: 700px;
-  margin: 35px auto;
+  margin: 50px auto;
   border: solid 3px black;
 }
 body {
@@ -18,7 +18,7 @@ h2 {
   text-align: center;
   background-color: #f7f7f7;
   font-size: 16px;
-  padding: 10px;
+  padding: 15px;
 }
 .price {
   font-size: 24px;
@@ -26,14 +26,14 @@ h2 {
 .free {
   color: #777;
   font-size: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .para {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .prod {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 .More-info:link,
 .More-info:visited {
@@ -43,19 +43,22 @@ h2 {
 .More-info:active {
   text-decoration: none;
 }
-.list {
+.list li {
   list-style: square;
   margin-left: 20px;
-}
-li {
   margin-bottom: 10px;
 }
+/* li {
+  margin-bottom: 10px;
+} */
 .btn {
   background-color: black;
   color: white;
-  padding: 10px;
-  border: solid black;
+  padding: 15px;
+  border-top: solid 3px black;
   width: 100%;
+  font-size: 20px;
+  font-weight: bold;
 }
 .btn:hover {
   background-color: white;
