@@ -1,5 +1,16 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+}
+.upper {
+  text-transform: uppercase;
+}
+.full-body {
+  width: 700px;
+  margin: 35px auto;
   border: solid 3px black;
+}
+body {
   font-family: sans-serif;
   line-height: 1.4;
 }
@@ -7,6 +18,7 @@ h2 {
   text-align: center;
   background-color: #f7f7f7;
   font-size: 16px;
+  padding: 10px;
 }
 .price {
   font-size: 24px;
@@ -14,22 +26,14 @@ h2 {
 .free {
   color: #777;
   font-size: 12px;
+  margin-bottom: 10px;
 }
-.upper {
-  text-transform: uppercase;
+.para {
+  margin-bottom: 10px;
 }
-.list {
-  list-style: square;
-}
-.btn {
-  background-color: black;
-  color: white;
-}
-.btn:hover {
-  background-color: white;
-  color: black;
-  cursor: pointer;
-  border: none;
+.prod {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .More-info:link,
 .More-info:visited {
@@ -38,4 +42,23 @@ h2 {
 .More-info:hover,
 .More-info:active {
   text-decoration: none;
+}
+.list {
+  list-style: square;
+  margin-left: 20px;
+}
+li {
+  margin-bottom: 10px;
+}
+.btn {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: solid black;
+  width: 100%;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }
