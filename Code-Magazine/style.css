@@ -9,6 +9,7 @@ body {
   color: #444;
   font-family: sans-serif;
   border-top: solid 10px #1098ad;
+  position: relative;
 }
 h1,
 h2,
@@ -59,13 +60,14 @@ li {
 .post-img {
   width: 100%;
   height: auto;
-  margin: 100px;
+  /* margin: 100px; */
 }
 .container {
   width: 700px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
+  /* position: relative; */
 }
 #author {
   font-style: italic;
@@ -92,6 +94,7 @@ li {
 }
 .post-header {
   margin-bottom: 40px;
+  /* position: relative; */
 }
 article {
   margin-bottom: 60px;
@@ -158,6 +161,16 @@ a:active {
   font-style: italic;
 }
 /* LVHA */
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
 
 /* Resolving Conflicts */
 /* #copyright{
