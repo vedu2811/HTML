@@ -127,12 +127,16 @@ li:last-child {
 
 /* Styling Links */
 
-/* nav a:link {
-  background-color: orangered;
+nav a:link {
+  /* background-color: orangered;
   margin: 20px;
   padding: 20px;
-  display: block;
-} */
+  display: block; */
+
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
 a:link {
   color: #1098ad;
   text-decoration: none;
