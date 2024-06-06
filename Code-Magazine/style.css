@@ -172,6 +172,18 @@ button {
   right: 50px;
 }
 
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* h2::first-letter {
+  font-size: 80px;
+} */
+
+p::first-line {
+  color: red;
+}
 /* Resolving Conflicts */
 /* #copyright{
   color:red;
