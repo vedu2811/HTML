@@ -137,6 +137,9 @@ nav a:link {
   margin-top: 10px;
   display: inline-block;
 }
+nav a:link:last-child {
+  margin-right: 0;
+}
 a:link {
   color: #1098ad;
   text-decoration: none;
