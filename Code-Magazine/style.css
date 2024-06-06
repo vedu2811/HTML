@@ -59,6 +59,7 @@ li {
 .post-img {
   width: 100%;
   height: auto;
+  margin: 100px;
 }
 .container {
   width: 700px;
