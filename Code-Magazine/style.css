@@ -181,7 +181,7 @@ h1::first-letter {
   font-size: 80px;
 } */
 
-p::first-line {
+h3 + p::first-line {
   color: red;
 }
 /* Resolving Conflicts */
