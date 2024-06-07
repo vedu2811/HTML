@@ -131,6 +131,9 @@ li:last-child {
 
 /* Styling Links */
 
+/* nav {
+  text-align: center;
+} */
 nav a:link {
   /* background-color: orangered;
   margin: 20px;
@@ -140,6 +143,7 @@ nav a:link {
   margin-right: 30px;
   margin-top: 10px;
   display: inline-block;
+  /* text-align:center; */
 }
 nav a:link:last-child {
   margin-right: 0;
@@ -161,6 +165,10 @@ a:active {
   font-style: italic;
 }
 /* LVHA */
+
+/* .main-header nav a:link {
+  margin-top: 100px;
+} */
 
 button {
   font-size: 22px;
