@@ -7,7 +7,7 @@
   text-transform: uppercase;
 }
 .full-body {
-  width: 800px;
+  width: 825px;
   margin: 50px auto;
   border: solid 3px black;
 }
@@ -120,13 +120,13 @@ h2::before {
 .ele1 {
   width: 240px;
   float: left;
-  margin-left: 35px;
+  margin-left: 40px;
   margin-top: 20px;
 }
 .ele2 {
   width: 240px;
   float: right;
-  margin-left: 35px;
+  margin-left: 40px;
 }
 .clearfix {
   clear: both;
