@@ -1,12 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 .upper {
   text-transform: uppercase;
 }
 .full-body {
-  width: 700px;
+  width: 800px;
   margin: 50px auto;
   border: solid 3px black;
 }
@@ -17,9 +18,10 @@ body {
 h2 {
   text-align: center;
   background-color: #f7f7f7;
-  font-size: 16px;
+  font-size: 20px;
   padding: 15px;
   position: relative;
+  font-weight: bold;
 }
 h2::before {
   content: "SALE";
@@ -45,7 +47,7 @@ h2::before {
   margin-bottom: 15px;
 }
 .prod {
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 15px;
 }
 .More-info:link,
@@ -101,4 +103,33 @@ h2::before {
   background-color: white;
   color: black;
   cursor: pointer;
+}
+/* FLOAT */
+.image {
+  float: left;
+  width: 240px;
+}
+.price {
+  float: left;
+  margin-bottom: 20px;
+}
+.free {
+  float: right;
+  margin-top: 10px;
+}
+.ele1 {
+  width: 240px;
+  float: left;
+  margin-left: 35px;
+  margin-top: 20px;
+}
+.ele2 {
+  width: 240px;
+  float: right;
+  margin-left: 35px;
+}
+.clearfix {
+  clear: both;
+  content: "";
+  display: block;
 }
