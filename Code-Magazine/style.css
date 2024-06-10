@@ -229,6 +229,7 @@ footer p{
 } */
 
 /* FLOATS */
+/*
 .author-img {
   float: left;
   margin-bottom: 20px;
@@ -237,7 +238,7 @@ footer p{
   float: left;
   margin-top: 10px;
   margin-left: 20px;
-  /* padding-left: 80px; */
+  padding-left: 80px;
 }
 
 h1 {
@@ -256,16 +257,17 @@ nav {
 }
 
 article {
-  /* background-color: green; */
+  background-color: green;
   width: 825px;
   float: left;
 }
 aside {
-  /* background-color: red; */
+  background-color: red;
   width: 300px;
   float: right;
 }
 footer {
-  /* background-color: yellow; */
+  background-color: yellow;
   clear: both;
 }
+*/
