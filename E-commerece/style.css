@@ -105,7 +105,7 @@ h2::before {
   cursor: pointer;
 }
 /* FLOAT */
-.image {
+/* .image {
   float: left;
   width: 240px;
 }
@@ -132,4 +132,6 @@ h2::before {
   clear: both;
   content: "";
   display: block;
-}
+} */
+
+/* FLEXBOX */
