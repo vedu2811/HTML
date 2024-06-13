@@ -122,6 +122,9 @@ img {
 
 /* TESTIMONIAL */
 .testimonial-section {
+  background-color: #087f5b;
+  color: #fff;
+  padding: 24px;
 }
 
 .testimonial-box h2 {
