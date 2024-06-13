@@ -32,6 +32,9 @@ section {
 
 h2 {
   margin-bottom: 48px;
+  font-size: 36px;
+  letter-spacing: -0.5px;
+  /* 20 / 24 / 30 / 36 */
 }
 
 .grid-3-cols {
