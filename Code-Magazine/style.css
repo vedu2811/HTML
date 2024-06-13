@@ -91,7 +91,7 @@ li {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
 .post-header {
@@ -99,7 +99,7 @@ li {
   /* position: relative; */
 }
 article {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 aside {
   background-color: #f7f7f7;
@@ -327,6 +327,7 @@ aside {
   display: grid;
   grid-template-columns: 1fr 300px;
   column-gap: 75px;
+  row-gap: 60px;
 }
 .main-header {
   grid-column: 1 / -1;
