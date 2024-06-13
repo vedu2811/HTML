@@ -95,6 +95,10 @@ img {
 .testimonial-section {
 }
 
+.testimonial-box h2 {
+  font-size: 24px;
+}
+
 .testimonial-box {
   grid-column: 2 / -1;
   align-self: center;
@@ -107,6 +111,8 @@ img {
 .testimonial-text {
   font-style: italic;
   margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 /* CHAIRS */
