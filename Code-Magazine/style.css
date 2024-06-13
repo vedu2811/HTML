@@ -10,7 +10,7 @@ body {
   color: #444;
   font-family: sans-serif;
   border-top: solid 10px #1098ad;
-  position: relative;
+  /* position: relative; */
 }
 h1,
 h2,
@@ -69,7 +69,7 @@ li {
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
-  /* position: relative; */
+  position: relative;
 }
 #author {
   font-style: italic;
