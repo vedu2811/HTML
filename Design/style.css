@@ -56,13 +56,20 @@ h2 {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 18px;
-  padding: 16px 32px;
   display: inline-block;
 }
 .btn:hover,
 .btn:active {
   background-color: #099268;
+}
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
 }
 
 /* ------------------------ */
