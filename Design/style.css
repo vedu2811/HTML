@@ -73,6 +73,10 @@ h2 {
   padding: 8px 12px;
 }
 
+img {
+  border-radius: 12px;
+}
+
 /* ------------------------ */
 /* COMPONENT STYLES */
 /* ------------------------ */
