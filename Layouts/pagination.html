@@ -32,7 +32,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 150px;
+        margin-top: 200px;
         gap: 10px;
       }
       .links {
@@ -43,16 +43,22 @@
       a:visited {
         color: #343a40;
         text-decoration: none;
-        padding: 6px 10px;
-        border-radius: 100%;
+        border-radius: 50%;
+        height: 36px;
+        width: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
-      a:hover {
+      a:hover,
+      a:active,
+      .links .open {
         color: #fff;
         background-color: #087f5b;
       }
       .btn {
-        height: 32px;
-        width: 32px;
+        height: 48px;
+        width: 48px;
         border-radius: 50%;
         background-color: #fff;
         border: 1px solid #087f5b;
@@ -66,12 +72,8 @@
         width: 24px;
         fill: #087f5b;
       }
-      .btn-icon:hover {
+      .btn:hover .btn-icon {
         fill: #fff;
-      }
-      .links .open {
-        background-color: #087f5b;
-        color: #fff;
       }
       .dots {
         align-self: flex-end;
