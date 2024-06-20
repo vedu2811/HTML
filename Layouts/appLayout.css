@@ -17,9 +17,19 @@ body {
   font-size: 24px;
   height: 100vh;
 
+  text-align: center;
+  font-weight: bold;
+
   display: grid;
   grid-template-columns: 80px 400px 1fr 250px;
   grid-template-rows: 80px 1fr;
+}
+nav,
+menu,
+aside,
+section,
+main {
+  padding-top: 20px;
 }
 nav {
   background-color: #343a40;
