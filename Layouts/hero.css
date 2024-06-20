@@ -30,7 +30,11 @@ header {
   /* background-color: orangered; */
   height: 100vh;
   position: relative;
-  background-image: url(image.jpg);
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(image.jpg);
   background-size: cover;
   color: #fff;
 }
