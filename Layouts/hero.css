@@ -2,3 +2,9 @@ html {
   font-family: "Rubik", sans-serif;
   color: #444;
 }
+nav {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
