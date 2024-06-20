@@ -39,6 +39,10 @@ header {
   background-color: violet;
   transform: translate(-50%, -50%);
 }
+.header-container-inner {
+  width: 50%;
+  background-color: yellow;
+}
 h1 {
   font-size: 52px;
   margin-bottom: 32px;
