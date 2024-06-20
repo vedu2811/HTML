@@ -6,6 +6,11 @@
   10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 /
   36 / 44 / 52 / 62 / 74 / 86 / 98
 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
   font-family: "Rubik", sans-serif;
   color: #444;
@@ -15,10 +20,12 @@ nav {
   font-weight: 700;
   display: flex;
   justify-content: space-between;
+  background-color: green;
 }
 .container {
   margin: 0 auto;
   width: 1200px;
+  background-color: red;
 }
 h1 {
   font-size: 52px;
@@ -46,4 +53,5 @@ h2 {
 }
 section {
   padding: 96px 0;
+  background-color: blue;
 }
