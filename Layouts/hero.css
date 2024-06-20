@@ -29,6 +29,14 @@ nav {
 header {
   background-color: orangered;
   height: 100vh;
+  position: relative;
+}
+.header-container {
+  width: 1200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: violet;
 }
 h1 {
   font-size: 52px;
