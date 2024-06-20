@@ -20,32 +20,36 @@ nav {
   font-weight: 700;
   display: flex;
   justify-content: space-between;
-  background-color: green;
+  /* background-color: green; */
 }
 .container {
   margin: 0 auto;
   width: 1200px;
 }
 header {
-  background-color: orangered;
+  /* background-color: orangered; */
   height: 100vh;
   position: relative;
+  background-image: url(image.jpg);
+  background-size: cover;
+  color: #fff;
 }
 .header-container {
   width: 1200px;
   position: absolute;
   left: 50%;
   top: 50%;
-  background-color: violet;
+  /* background-color: violet; */
   transform: translate(-50%, -50%);
 }
 .header-container-inner {
   width: 50%;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 h1 {
   font-size: 52px;
   margin-bottom: 32px;
+  line-height: 1.05;
 }
 p {
   font-size: 20px;
@@ -69,5 +73,5 @@ h2 {
 }
 section {
   padding: 96px 0;
-  background-color: blue;
+  /* background-color: blue; */
 }
