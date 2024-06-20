@@ -55,6 +55,10 @@ button {
 
   display: inline-block;
 }
+button:last-child {
+  background-color: #d6336c;
+  margin-left: auto;
+}
 section {
   background-color: #e9ecef;
 }
