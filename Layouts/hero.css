@@ -16,6 +16,10 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
 h1 {
   font-size: 52px;
   margin-bottom: 32px;
