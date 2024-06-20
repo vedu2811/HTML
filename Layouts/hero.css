@@ -1,3 +1,11 @@
+/*
+  SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+  FONT SIZE SYSTEM (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 /
+  36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
 html {
   font-family: "Rubik", sans-serif;
   color: #444;
@@ -7,4 +15,8 @@ nav {
   font-weight: 700;
   display: flex;
   justify-content: space-between;
+}
+h1 {
+  font-size: 52px;
+  margin-bottom: 32px;
 }
