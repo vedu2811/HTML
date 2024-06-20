@@ -25,7 +25,10 @@ nav {
 .container {
   margin: 0 auto;
   width: 1200px;
-  background-color: red;
+}
+header {
+  background-color: orangered;
+  height: 100vh;
 }
 h1 {
   font-size: 52px;
