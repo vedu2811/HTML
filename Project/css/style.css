@@ -91,6 +91,18 @@ body {
   border-radius: 9px;
 }
 
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
 .hero-img {
   width: 100%;
 }
