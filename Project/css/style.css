@@ -89,6 +89,9 @@ body {
   padding: 1.6rem 3.2rem;
   text-decoration: none;
   border-radius: 9px;
+
+  /* Put transition on original "state" only */
+  transition: background-color 0.3s;
 }
 
 .btn--full:link,
