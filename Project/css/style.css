@@ -125,12 +125,14 @@ body {
 }
 
 .margin-right-sm {
-  margin-right: 1.6rem;
+  margin-right: 1.6rem !important;
 }
 
 .delivered-meals {
   display: flex;
   margin-top: 8rem;
+  align-items: center;
+  gap: 1.6rem;
 }
 
 .delivered-img {
@@ -141,6 +143,11 @@ body {
   height: 4.8rem;
   width: 4.8rem;
   border-radius: 50%;
+  margin-right: -1.6rem;
+}
+
+.delivered-img img:last-child {
+  margin: 0;
 }
 
 .delivered-text {
