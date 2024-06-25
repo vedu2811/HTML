@@ -127,3 +127,23 @@ body {
 .margin-right-sm {
   margin-right: 1.6rem;
 }
+
+.delivered-meals {
+  display: flex;
+  margin-top: 8rem;
+}
+
+.delivered-img {
+  display: flex;
+}
+
+.delivered-img img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
