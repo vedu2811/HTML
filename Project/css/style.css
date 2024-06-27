@@ -215,3 +215,13 @@
 .section-meals {
   padding: 9.6rem 0;
 }
+
+.meal-title {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.meal-img {
+  width: 100%;
+}
