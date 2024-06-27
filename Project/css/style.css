@@ -118,7 +118,20 @@
 }
 
 /***********************************/
-/* HERO SECTION */
+/* FEATURED-IN SECTION */
+/***********************************/
+
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+/***********************************/
+/* HOW IT WORKS SECTION */
 /***********************************/
 
 .section-how {
