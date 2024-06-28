@@ -376,6 +376,21 @@
 .pricing-plan--complete {
   background-color: #fdf2e9;
   padding: 4.8rem;
+  position: relative;
+}
+
+.pricing-plan--complete::after {
+  content: "Best Value";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #ffd43b;
+  padding: 0.8rem 3.2rem;
 }
 
 .plan-header {
