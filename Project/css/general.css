@@ -31,7 +31,12 @@ paragraph default: 1.6
 
 - Shades: #cf711f
 - Accents:
-- Greys: #555, #333, #888, #ddd
+- Greys:
+#555
+#333
+#888
+#ddd
+#6f6f6f (lightest grey allowed on the primary color)
 
 --- 05 SHADOWS
 
