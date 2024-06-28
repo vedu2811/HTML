@@ -474,9 +474,11 @@
 .cta {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  background-color: #e67e22;
+  /* background-color: #e67e22; */
   box-shadow: 0 2.4rem 4.8remrgba (0, 0, 0, 0.15);
   border-radius: 11px;
+
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
 
   /* temp */
   height: 50rem;
