@@ -71,7 +71,9 @@ html {
   /* 10/16 = 0.625 = 62.5% */
   font-size: 62.5%;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+
+  /* Does not work on SAFARI */
+  /* scroll-behavior: smooth; */
 }
 
 body {
