@@ -125,6 +125,33 @@ Instead 1rem = 1em = 16px */
   .btn-mobile-nav {
     display: block;
   }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Hide the nav (we can 
+    not do display: none bcoz 
+    we won's be able to add styles 
+    and transitions after that*/
+  }
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
 }
 
 /* 
