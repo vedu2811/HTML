@@ -100,6 +100,14 @@ Instead 1rem = 1em = 16px */
   .meal-content {
     padding: 2.4rem 3.2rem 3.2rem 3.2rem;
   }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 /* 
