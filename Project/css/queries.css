@@ -268,6 +268,20 @@ Instead 1rem = 1em = 16px */
   .step-img-box {
     transform: translateY(2.4rem);
   }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .pricing-plan--complete::after {
+    right: -10%;
+    top: 5%;
+  }
 }
 
 /* 
