@@ -68,6 +68,19 @@ Instead 1rem = 1em = 16px */
   html {
     font-size: 50%;
   }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-img-box,
+  .hero-text-box {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
 }
 
 /* 
