@@ -282,6 +282,19 @@ Instead 1rem = 1em = 16px */
     right: -10%;
     top: 5%;
   }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+  .cta-img-box {
+    grid-row: 1;
+    height: 32rem;
+  }
 }
 
 /* 
