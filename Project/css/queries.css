@@ -216,6 +216,7 @@ Instead 1rem = 1em = 16px */
   .nav-col {
     grid-row: 1;
     grid-column: span 2;
+    margin-bottom: 3.2rem;
   }
 }
 
