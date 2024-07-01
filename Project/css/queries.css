@@ -71,6 +71,8 @@ Instead 1rem = 1em = 16px */
 
   .hero {
     grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
   }
 
   .hero-img-box,
@@ -80,6 +82,11 @@ Instead 1rem = 1em = 16px */
 
   .hero-img {
     width: 60%;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
   }
 }
 
