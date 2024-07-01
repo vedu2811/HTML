@@ -44,10 +44,15 @@ allLinks.forEach(function (link) {
         behavior: "smooth",
       });
 
+    // Scroll to other links (href)
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
+
+    //Close Mobile-nav
+    if (link.classList.contains("main-nav-link"))
+      headerEl.classList.toggle("nav-open");
   });
 });
 
