@@ -137,12 +137,20 @@ Instead 1rem = 1em = 16px */
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s;
 
     /* Hide the nav (we can 
     not do display: none bcoz 
     we won's be able to add styles 
     and transitions after that*/
+
+    opacity: 0;
   }
+
+  .nav-open .main-nav {
+    opacity: 1;
+  }
+
   .main-nav-list {
     flex-direction: column;
     gap: 4.8rem;
