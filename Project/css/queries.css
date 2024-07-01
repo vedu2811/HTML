@@ -203,6 +203,20 @@ Instead 1rem = 1em = 16px */
   .pricing-plan {
     width: 100%;
   }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .address-col,
+  .logo-col {
+    grid-column: span 3;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+  }
 }
 
 /* 
