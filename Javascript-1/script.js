@@ -1,5 +1,10 @@
 let js = "amazing";
-if (js === "amazing") alert("JS is amazing");
-
-40 + 8 + 23 - 10;
 console.log(40 + 8 + 23 - 10);
+
+console.log("Vedant");
+console.log(23);
+
+let firstName = "Apple";
+console.log(firstName);
+console.log(firstName);
+console.log(firstName);
