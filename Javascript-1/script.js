@@ -37,3 +37,7 @@ console.log(typeof javascriptIsFun);
 
 javascriptIsFun = "YES!";
 console.log(typeof javascriptIsFun);
+
+let year;
+console.log(year);
+console.log(typeof year);
