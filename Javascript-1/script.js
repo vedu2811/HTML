@@ -45,7 +45,6 @@ year = 1991;
 console.log(typeof year);
 
 console.log(typeof null);
-*/
 
 let age = 30;
 age = 31;
@@ -59,3 +58,15 @@ job = "teacher";
 
 lastName = "Jalan";
 console.log(lastName);
+*/
+
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+console.log(ageJonas, ageSarah);
+
+console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
+
+const firstName = "Vedant";
+const lastName = "Jalan";
+console.log(firstName + " " + lastName);
