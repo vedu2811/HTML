@@ -60,6 +60,7 @@ lastName = "Jalan";
 console.log(lastName);
 */
 
+//Math Operators
 const now = 2037;
 const ageJonas = now - 1991;
 const ageSarah = now - 2018;
@@ -70,3 +71,14 @@ console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
 const firstName = "Vedant";
 const lastName = "Jalan";
 console.log(firstName + " " + lastName);
+
+//Assignment Operators
+let x = 10 + 5;
+x += 10; //x=x+10 =25
+x *= 4; //x=x*4 =100
+x++; //x=x+1
+x--;
+x--;
+console.log(x);
+
+//Comparison Operators
