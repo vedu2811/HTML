@@ -112,5 +112,7 @@ const jonas =
   "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
 console.log(jonas);
 
-const jonasNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`; //Template Strings
 console.log(jonasNew);
+
+console.log(`a regular string..`);
