@@ -160,7 +160,6 @@ console.log("23" > "18");
 let n = "1" + 1;
 n -= 1;
 console.log(n);
-*/
 
 //5 FALSY Values: 0, '', undefined, null, NaN
 
@@ -182,4 +181,28 @@ if (height) {
   console.log("YAY, Height is defined");
 } else {
   console.log("Height is undefined");
+}
+*/
+
+const age = "18";
+if (age === 18) console.log("Adult - strict");
+
+if (age == 18) console.log("Adult - loose");
+
+const fav = Number(prompt("Write your fav. no."));
+console.log(fav);
+console.log(typeof fav);
+
+if (fav === 23) {
+  console.log("Cool");
+} else if (fav === 7) {
+  console.log("nice one");
+} else if (fav === 9) {
+  console.log("good");
+} else {
+  console.log("Not 7 or 23 or 9");
+}
+
+if (fav !== 23) {
+  console.log("Why not 23?");
 }
