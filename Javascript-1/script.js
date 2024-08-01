@@ -182,7 +182,6 @@ if (height) {
 } else {
   console.log("Height is undefined");
 }
-*/
 
 const age = "18";
 if (age === 18) console.log("Adult - strict");
@@ -206,3 +205,4 @@ if (fav === 23) {
 if (fav !== 23) {
   console.log("Why not 23?");
 }
+*/
