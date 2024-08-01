@@ -206,3 +206,25 @@ if (fav !== 23) {
   console.log("Why not 23?");
 }
 */
+
+const hasDriverLicense = true; //A
+const hasGoodVision = true; //B
+
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
+console.log(!hasDriverLicense);
+
+// if (hasDriverLicense && hasGoodVision) {
+//   console.log("Sarah can drive");
+// } else {
+//   console.log("Can't drive");
+// }
+
+const isTired = false; //C
+console.log(hasDriverLicense && hasGoodVision && isTired);
+
+if (hasDriverLicense && hasGoodVision && !isTired) {
+  console.log("Sarah can drive");
+} else {
+  console.log("Can't drive");
+}
