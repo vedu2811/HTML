@@ -276,7 +276,6 @@ if (23 > 10) {
 //EXPRESSION
 const me = "vedant";
 console.log(`I'm ${2024 - 2003} years old ${me}`);
-*/
 
 const age = 23;
 // age >= 18
@@ -287,3 +286,4 @@ const drink = age >= 18 ? "wine" : "water";
 console.log(drink);
 
 console.log(`I like to drink ${age >= 18 ? "wine🍷" : "water💧"}`);
+*/
