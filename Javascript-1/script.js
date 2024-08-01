@@ -267,7 +267,6 @@ if (day === "monday") {
 } else {
   console.log("Not a valid day");
 }
-*/
 
 //STATEMENT
 if (23 > 10) {
@@ -277,3 +276,12 @@ if (23 > 10) {
 //EXPRESSION
 const me = "vedant";
 console.log(`I'm ${2024 - 2003} years old ${me}`);
+*/
+
+const age = 23;
+// age >= 18
+//   ? console.log("I like to drink wine🍷")
+//   : console.log("I like to drink water💧");
+
+const drink = age >= 18 ? "wine" : "water";
+console.log(drink);
