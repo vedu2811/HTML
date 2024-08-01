@@ -205,7 +205,6 @@ if (fav === 23) {
 if (fav !== 23) {
   console.log("Why not 23?");
 }
-*/
 
 const hasDriverLicense = true; //A
 const hasGoodVision = true; //B
@@ -227,4 +226,30 @@ if (hasDriverLicense && hasGoodVision && !isTired) {
   console.log("Sarah can drive");
 } else {
   console.log("Can't drive");
+}
+*/
+
+const day = "monday";
+
+switch (day) {
+  case "monday":
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
+    break;
+  case "tuesday":
+    console.log("prepare videos");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("Write code examples");
+    break;
+  case "friday":
+    console.log("record videos");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("Enjoy weekend");
+    break;
+  default:
+    console.log("Not a valid day");
 }
