@@ -93,7 +93,6 @@ const yearsUntilRetirement = function (birthYear, firstNane) {
 
 console.log(yearsUntilRetirement(1991, "vedant"));
 console.log(yearsUntilRetirement(1950, "mike"));
-*/
 
 const friend1 = "michael";
 const friend2 = "steven";
@@ -137,3 +136,35 @@ const ages = [
   calcAge(years[years.length - 1]),
 ];
 console.log(ages);
+*/
+
+const friends = ["Michael", "Steven", "Peter"];
+
+//ADD ELEMENTS
+const newLength = friends.push("Jay");
+console.log(friends);
+console.log(newLength);
+
+friends.unshift("John");
+console.log(friends);
+
+//REMOVE ELEMENTS
+friends.pop();
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf("Steven"));
+console.log(friends.indexOf("Bob"));
+
+friends.push(23);
+console.log(friends.includes("Steven"));
+console.log(friends.includes("Bob"));
+console.log(friends.includes(23));
+
+if (friends.includes("Steven")) {
+  console.log("You have a friend named Steven");
+}
