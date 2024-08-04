@@ -136,7 +136,6 @@ const ages = [
   calcAge(years[years.length - 1]),
 ];
 console.log(ages);
-*/
 
 const friends = ["Michael", "Steven", "Peter"];
 
@@ -168,3 +167,21 @@ console.log(friends.includes(23));
 if (friends.includes("Steven")) {
   console.log("You have a friend named Steven");
 }
+*/
+
+const vedant = [
+  "vedant",
+  "jalan",
+  2024 - 2003,
+  "student",
+  [("abc", "def", "ghi")],
+];
+
+//OBJECTS
+const jonas = {
+  firstName: "jonas",
+  lastName: "Schmedthmann",
+  age: 2037 - 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+};
