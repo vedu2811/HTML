@@ -240,9 +240,9 @@ const jonas = {
   },
 };
 
-console.log(jonas.calcAge(jonas.calcAge()));
-console.log(jonas.calcAge(jonas.age));
-console.log(jonas.calcAge(jonas.age));
-console.log(jonas.calcAge(jonas.age));
+console.log(jonas.calcAge());
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.age);
 
 // console.log(jonas["calcAge"](1992));
