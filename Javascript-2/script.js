@@ -267,7 +267,7 @@ console.log(jonas.getSummary());
 for (let rep = 1; rep <= 10; rep++) {
   console.log(`lifting weights repeatition ${rep} 🏋️`);
 }
-*/
+
 const types = [];
 
 const vedant = [
@@ -308,4 +308,18 @@ console.log("--- BREAK WITH NUMBER ---");
 for (let i = 0; i < vedant.length; i++) {
   if (typeof vedant[i] === "number") break;
   console.log(vedant[i], typeof vedant[i]);
+}
+*/
+
+const vedant = [
+  "vedant",
+  "jalan",
+  2024 - 2003,
+  "student",
+  ["abc", "def", "ghi"],
+  true,
+];
+
+for (let i = vedant.length - 1; i >= 0; i--) {
+  console.log(i, vedant[i]);
 }
