@@ -288,3 +288,24 @@ for (let i = 0; i < vedant.length; i++) {
   types.push(typeof vedant[i]);
 }
 console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+//CONTINUE and BREAK
+console.log("---ONLY STRINGS ---");
+for (let i = 0; i < vedant.length; i++) {
+  if (typeof vedant[i] != "string") continue;
+  console.log(vedant[i], typeof vedant[i]);
+}
+
+console.log("--- BREAK WITH NUMBER ---");
+for (let i = 0; i < vedant.length; i++) {
+  if (typeof vedant[i] === "number") break;
+  console.log(vedant[i], typeof vedant[i]);
+}
