@@ -330,7 +330,6 @@ for (let exercise = 1; exercise <= 3; exercise++) {
     console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️`);
   }
 }
-*/
 
 // for (let rep = 1; rep <= 10; rep++) {
 //   console.log(`lifting weights repeatition ${rep} 🏋️`);
@@ -351,3 +350,4 @@ while (dice != 6) {
     console.log("Loop is about to end..");
   }
 }
+*/
