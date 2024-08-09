@@ -238,11 +238,17 @@ const jonas = {
     this.age = 2037 - this.birthYear;
     return this.age;
   },
+
+  getSummary: function () {
+    return `${jonas.firstName} is a ${this.calcAge()}-year old ${
+      jonas.job
+    }, and he has ${this.hasDriversLicense ? "a" : "no"} driver's license`;
+  },
 };
 
-console.log(jonas.calcAge());
-console.log(jonas.age);
-console.log(jonas.age);
-console.log(jonas.age);
-
+// console.log(jonas.calcAge());
+// console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
 // console.log(jonas["calcAge"](1992));
+console.log(jonas.getSummary());
