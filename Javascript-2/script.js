@@ -251,7 +251,6 @@ const jonas = {
 // console.log(jonas.age);
 // console.log(jonas["calcAge"](1992));
 console.log(jonas.getSummary());
-*/
 
 // console.log("lifting weights repeatition 1 🏋️");
 // console.log("lifting weights repeatition 2 🏋️");
@@ -268,3 +267,24 @@ console.log(jonas.getSummary());
 for (let rep = 1; rep <= 10; rep++) {
   console.log(`lifting weights repeatition ${rep} 🏋️`);
 }
+*/
+const types = [];
+
+const vedant = [
+  "vedant",
+  "jalan",
+  2024 - 2003,
+  "student",
+  ["abc", "def", "ghi"],
+  true,
+];
+
+for (let i = 0; i < vedant.length; i++) {
+  //READING FROM ARRAY
+  console.log(vedant[i], typeof vedant[i]);
+
+  //FILLING TYPES ARRAY
+  // types[i] = typeof vedant[i];
+  types.push(typeof vedant[i]);
+}
+console.log(types);
