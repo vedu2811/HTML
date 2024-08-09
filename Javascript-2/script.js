@@ -167,7 +167,6 @@ console.log(friends.includes(23));
 if (friends.includes("Steven")) {
   console.log("You have a friend named Steven");
 }
-*/
 
 const vedant = [
   "vedant",
@@ -216,3 +215,34 @@ console.log(jonas);
 console.log(
   `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`
 );
+*/
+
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Schmedthmann",
+  birthYear: 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+  hasDriversLicense: true,
+
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // },
+
+  // calcAge: function () {
+  //   // console.log(this);
+  //   return 2037 - this.birthYear;
+  // },
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+};
+
+console.log(jonas.calcAge(jonas.calcAge()));
+console.log(jonas.calcAge(jonas.age));
+console.log(jonas.calcAge(jonas.age));
+console.log(jonas.calcAge(jonas.age));
+
+// console.log(jonas["calcAge"](1992));
