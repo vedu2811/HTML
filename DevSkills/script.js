@@ -105,7 +105,6 @@ const calcTempAmplitudeBug = function (t1, t2) {
 const ampBug = calcTempAmplitudeBug([4, 5, 6, 2], [1, 2, 9, 7]);
 // A) Identify
 console.log(ampBug);
-*/
 
 const printForecast = function (arr) {
   var array = [];
@@ -117,3 +116,4 @@ const printForecast = function (arr) {
 };
 const test1 = printForecast([17, 21, 23]);
 const test2 = printForecast([12, 5, -5, 0, 4]);
+*/
