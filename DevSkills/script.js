@@ -43,7 +43,7 @@ console.log(amp);
 // 2) Breaking the problem
 // - Merge two arrays..
 
-const calcTempAmplitudeNew = function (t1, t2) {
+const calcTempAmplitudeBug = function (t1, t2) {
   const temps = t1.concat(t2);
   console.log(temps);
 
@@ -59,9 +59,8 @@ const calcTempAmplitudeNew = function (t1, t2) {
   console.log(max, min);
   return max - min;
 };
-const ampNew = calcTempAmplitudeNew([4, 5, 6, 2], [1, 2, -9, 0]);
-console.log(ampNew);
-*/
+const ampBug = calcTempAmplitudeBug([4, 5, 6, 2], [1, 2, -9, 0]);
+console.log(ampBug);
 
 const measureKelvin = function () {
   const measurement = {
@@ -69,7 +68,8 @@ const measureKelvin = function () {
     unit: "celcius",
 
     // C) FIX
-    value: Number(prompt("Degree celcius")),
+    // value: Number(prompt("Degree celcius")),
+    value: 10,
   };
 
   // B) Find the Bug
@@ -84,3 +84,25 @@ const measureKelvin = function () {
 };
 // A) Identify the bug.
 console.log(measureKelvin());
+
+// Using a Debugger
+const calcTempAmplitudeBug = function (t1, t2) {
+  const temps = t1.concat(t2);
+  console.log(temps);
+
+  let max = 0;
+  let min = 0;
+  for (let i = 0; i < temps.length; i++) {
+    const curTemp = temps[i];
+    if (typeof curTemp !== "number") continue;
+
+    if (curTemp > max) max = curTemp;
+    if (curTemp < min) min = curTemp;
+  }
+  console.log(max, min);
+  return max - min;
+};
+const ampBug = calcTempAmplitudeBug([4, 5, 6, 2], [1, 2, 9, 7]);
+// A) Identify
+console.log(ampBug);
+*/
