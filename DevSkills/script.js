@@ -106,3 +106,14 @@ const ampBug = calcTempAmplitudeBug([4, 5, 6, 2], [1, 2, 9, 7]);
 // A) Identify
 console.log(ampBug);
 */
+
+const printForecast = function (arr) {
+  var array = [];
+  array.push("...");
+  for (let i = 0; i < arr.length; i++) {
+    array.push(`${arr[i]}°C in ${i + 1} days ...`);
+  }
+  console.log(array.join(" "));
+};
+const test1 = printForecast([17, 21, 23]);
+const test2 = printForecast([12, 5, -5, 0, 4]);
