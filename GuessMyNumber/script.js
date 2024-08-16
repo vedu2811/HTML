@@ -38,20 +38,10 @@ document.querySelector(".check").addEventListener("click", function () {
     }
 
     //When guess is lower
-  } else if (guess < secretNumber) {
+  } else if (guess !== secretNumber) {
     if (score > 1) {
-      document.querySelector(".message").textContent = "📈 Guess Bigger!";
-      score--;
-      document.querySelector(".score").textContent = score;
-    } else {
-      document.querySelector(".message").textContent = "☹️ You Lost the Game";
-      document.querySelector(".score").textContent = 0;
-    }
-
-    //When guess is higher
-  } else if (guess > secretNumber) {
-    if (score > 1) {
-      document.querySelector(".message").textContent = "📉 Guess Lower!";
+      document.querySelector(".message").textContent =
+        guess < secretNumber ? "📈 Guess Bigger!" : "📉 Guess Lower!";
       score--;
       document.querySelector(".score").textContent = score;
     } else {
