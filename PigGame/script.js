@@ -13,16 +13,13 @@ const player0El = document.querySelector(".player--0");
 const player1El = document.querySelector(".player--1");
 
 // Starting conditions
-let playing = true;
-const scores = [0, 0];
-let currentScore = 0;
-let activePlayer = 0;
+let playing, scores, currentScore, activePlayer;
+
 const start = function () {
   currentScore = 0;
   activePlayer = 0;
   playing = true;
-  scores[0] = 0;
-  scores[1] = 0;
+  scores = [0, 0];
 
   current0El.textContent = 0;
   current1El.textContent = 0;
