@@ -39,3 +39,28 @@
     font-size: 1.4rem;
   }
 }
+
+/***********************************/
+/* BELOW 608px (38em) */
+/***********************************/
+
+@media (max-width: 38em) {
+  main {
+    flex-direction: column;
+    height: 80rem;
+  }
+  player {
+    padding: 5rem;
+  }
+  .btn--new {
+    top: 3rem;
+  }
+  .btn--roll {
+    top: 37.5rem;
+    left: 20rem;
+  }
+  .btn--hold {
+    top: 37.5rem;
+    left: 40rem;
+  }
+}
