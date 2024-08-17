@@ -70,6 +70,7 @@ btnHold.addEventListener("click", function () {
         .querySelector(".player--active")
         .classList.remove("player--active");
       playing = false;
+      diceEl.classList.add("hidden");
     } else {
       switchPlayer();
     }
