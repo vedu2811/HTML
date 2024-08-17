@@ -21,6 +21,23 @@ const scores = [0, 0];
 let currentScore = 0;
 let activePlayer = 0;
 
+const hold = function () {
+  //Main Score
+  scores[activePlayer] += currentScore;
+  document.querySelector(`#score--${activePlayer}`).textContent =
+    scores[activePlayer];
+
+  //Current Score
+  currentScore = 0;
+  document.getElementById(`current--${activePlayer}`).textContent =
+    currentScore;
+
+  //Active Player
+  activePlayer = activePlayer === 0 ? 1 : 0;
+  player0El.classList.toggle("player--active");
+  player1El.classList.toggle("player--active");
+};
+
 // Rolling Dice Functionality
 btnRoll.addEventListener("click", function () {
   // 1. Generating Random dice roll
@@ -37,19 +54,8 @@ btnRoll.addEventListener("click", function () {
     document.getElementById(`current--${activePlayer}`).textContent =
       currentScore;
   } else {
-    //Scores
-    scores[activePlayer] += currentScore;
-    document.querySelector(`#score--${activePlayer}`).textContent =
-      scores[activePlayer];
-
-    //Current Score
-    currentScore = 0;
-    document.getElementById(`current--${activePlayer}`).textContent =
-      currentScore;
-
-    //Active Player
-    activePlayer = activePlayer === 0 ? 1 : 0;
-    player0El.classList.toggle("player--active");
-    player1El.classList.toggle("player--active");
+    hold();
   }
 });
+
+btnHold.addEventListener("click", hold);
