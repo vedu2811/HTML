@@ -9,6 +9,8 @@ const diceEl = document.querySelector(".dice");
 const btnNew = document.querySelector(".btn--new");
 const btnRoll = document.querySelector(".btn--roll");
 const btnHold = document.querySelector(".btn--hold");
+const player0El = document.querySelector(".player--0");
+const player1El = document.querySelector(".player--1");
 
 // Starting conditions
 score0El.textContent = 0;
@@ -33,6 +35,9 @@ btnRoll.addEventListener("click", function () {
     current0El.textContent = currentScore;
   } else {
     //switch
-    currentScore = 0;
+    score0El.textContent = current0El.textContent;
+    current0El.textContent = 0;
+    player0El.classList.remove("player--active");
+    player1El.classList.add("player--active");
   }
 });
