@@ -61,9 +61,11 @@ btnHold.addEventListener("click", function () {
 
   //Finish
   if (scores[activePlayer] >= 100) {
+    document.querySelector(".player--active").classList.add("player--winner");
     document
-      .querySelector(`player--${activePlayer}`)
-      .classList.add("player--winner");
+      .querySelector(".player--active")
+      .classList.remove("player--active");
+  } else {
+    switchPlayer();
   }
-  switchPlayer();
 });
