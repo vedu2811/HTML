@@ -58,7 +58,7 @@ p {
 /* -------------------------- */
 
 .hidden {
-  /* display: none; */
+  display: none;
 }
 
 .modal {
