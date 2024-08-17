@@ -7,5 +7,7 @@ const btnOpenModal = document.querySelectorAll(".show-modal");
 console.log(btnOpenModal);
 
 for (let i = 0; i < btnOpenModal.length; i++) {
-  console.log(btnOpenModal[i].textContent);
+  btnOpenModal[i].addEventListener("click", function () {
+    console.log("Button Clicked");
+  });
 }
