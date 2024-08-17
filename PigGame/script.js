@@ -27,4 +27,12 @@ btnRoll.addEventListener("click", function () {
   diceEl.src = `dice-${dice}.png`;
 
   // 3. Check rolled is 1? if true, switch..
+  if (dice !== 1) {
+    //Current score updation
+    currentScore += dice;
+    current0El.textContent = currentScore;
+  } else {
+    //switch
+    currentScore = 0;
+  }
 });
