@@ -59,5 +59,11 @@ btnHold.addEventListener("click", function () {
   document.querySelector(`#score--${activePlayer}`).textContent =
     scores[activePlayer];
 
+  //Finish
+  if (scores[activePlayer] >= 100) {
+    document
+      .querySelector(`player--${activePlayer}`)
+      .classList.add("player--winner");
+  }
   switchPlayer();
 });
