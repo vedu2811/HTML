@@ -9,5 +9,7 @@ console.log(btnOpenModal);
 for (let i = 0; i < btnOpenModal.length; i++) {
   btnOpenModal[i].addEventListener("click", function () {
     console.log("Button Clicked");
+    modal.classList.remove("hidden");
+    overlay.classList.remove("hidden");
   });
 }
