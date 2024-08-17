@@ -38,6 +38,9 @@ btnRoll.addEventListener("click", function () {
       currentScore;
   } else {
     //switch
+    scores[activePlayer] += currentScore;
+    document.querySelector(`#score--${activePlayer}`).textContent =
+      scores[activePlayer];
     currentScore = 0;
     document.getElementById(`current--${activePlayer}`).textContent =
       currentScore;
