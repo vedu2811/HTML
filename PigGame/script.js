@@ -21,12 +21,7 @@ const scores = [0, 0];
 let currentScore = 0;
 let activePlayer = 0;
 
-const hold = function () {
-  //Main Score
-  scores[activePlayer] += currentScore;
-  document.querySelector(`#score--${activePlayer}`).textContent =
-    scores[activePlayer];
-
+const switchPlayer = function () {
   //Current Score
   currentScore = 0;
   document.getElementById(`current--${activePlayer}`).textContent =
@@ -54,8 +49,15 @@ btnRoll.addEventListener("click", function () {
     document.getElementById(`current--${activePlayer}`).textContent =
       currentScore;
   } else {
-    hold();
+    switchPlayer();
   }
 });
 
-btnHold.addEventListener("click", hold);
+btnHold.addEventListener("click", function () {
+  //Main Score
+  scores[activePlayer] += currentScore;
+  document.querySelector(`#score--${activePlayer}`).textContent =
+    scores[activePlayer];
+
+  switchPlayer();
+});
