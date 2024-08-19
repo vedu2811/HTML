@@ -72,7 +72,6 @@ const z = 3;
 console.log(x === window.x);
 console.log(y === window.y);
 console.log(z === window.z);
-*/
 
 console.log(this);
 
@@ -105,3 +104,21 @@ matilda.calcAge();
 
 const f = Vedant.calcAge;
 // f();
+*/
+
+// var firstName = "matilda";
+
+const Vedant = {
+  firstName: "vedant",
+  year: 2003,
+  calcAge: function () {
+    console.log(this);
+    console.log(2023 - this.year);
+  },
+
+  greet: () => {
+    console.log(this);
+    console.log(`Hey ${this.firstName}`);
+  },
+};
+Vedant.greet();
