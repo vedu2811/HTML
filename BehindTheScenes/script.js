@@ -102,3 +102,6 @@ const matilda = {
 };
 matilda.calcAge = Vedant.calcAge;
 matilda.calcAge();
+
+const f = Vedant.calcAge;
+// f();
