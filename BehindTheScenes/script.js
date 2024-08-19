@@ -112,8 +112,17 @@ const Vedant = {
   firstName: "vedant",
   year: 2003,
   calcAge: function () {
-    console.log(this);
+    // console.log(this);
     console.log(2023 - this.year);
+
+    // SOLUTION - 1
+    const self = this; //self or that
+    const isMilennial = function () {
+      console.log(self);
+      // console.log(this.year >= 1981 && this.year <= 2003);
+      console.log(self.year >= 1981 && self.year <= 2003);
+    };
+    isMilennial();
   },
 
   greet: () => {
@@ -122,3 +131,4 @@ const Vedant = {
   },
 };
 Vedant.greet();
+Vedant.calcAge();
