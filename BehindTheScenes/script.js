@@ -1,5 +1,6 @@
 "use strict";
 
+/*
 function calcAge(birthYear) {
   const age = 2024 - birthYear;
 
@@ -31,3 +32,12 @@ function calcAge(birthYear) {
 
 const firstName = "Vedant";
 calcAge(2003);
+*/
+
+console.log(me);
+// console.log(job);
+// console.log(year);
+
+var me = "Vedant";
+let job = "student";
+const year = 2003;
