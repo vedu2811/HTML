@@ -152,7 +152,6 @@ const addArrow = (a, b) => {
   return a + b;
 };
 addArrow(2, 3, 4, 5); // Reference Error
-*/
 
 let age = 30;
 let oldAge = age;
@@ -168,3 +167,9 @@ const friend = me;
 friend.age = 25;
 console.log("Friend", friend);
 console.log("Me", me); //CONFUSION
+*/
+
+let lastName = "Williams";
+let oldLastName = lastName;
+lastName = "Davis";
+console.log(lastName, oldLastName);
