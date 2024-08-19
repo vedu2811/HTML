@@ -147,3 +147,9 @@ const addExpr = function (a, b) {
 };
 addExpr(2, 5);
 addExpr(2, 5, 3, 6);
+
+const addArrow = (a, b) => {
+  console.log(arguments);
+  return a + b;
+};
+addArrow(2, 3, 4, 5); // Reference Error
