@@ -169,11 +169,13 @@ console.log("Friend", friend);
 console.log("Me", me); //CONFUSION
 */
 
+// PRIMITIVE TYPES
 let lastName = "Williams";
 let oldLastName = lastName;
 lastName = "Davis";
 console.log(lastName, oldLastName);
 
+// REFERENCE TYPES
 const jessica = {
   firstName: "jessica",
   lastName: "Williams",
@@ -183,3 +185,17 @@ const marriedJessica = jessica;
 marriedJessica.lastName = "Davis";
 console.log("Before Marriage: ", jessica);
 console.log("After Marriage: ", marriedJessica);
+
+// marriedJessica = {};
+
+// copying objets
+const jessica2 = {
+  firstName: "jessica",
+  lastName: "williams",
+  age: 27,
+};
+
+const jessicaCopy = Object.assign({}, jessica2);
+jessicaCopy.lastName = "Davis";
+console.log("Before Marriage: ", jessica2);
+console.log("After Marriage: ", jessicaCopy);
