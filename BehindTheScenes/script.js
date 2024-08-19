@@ -41,3 +41,18 @@ console.log(me);
 var me = "Vedant";
 let job = "student";
 const year = 2003;
+
+//Functions
+console.log(addDecl(5, 6));
+// console.log(addExpr(4, 6));
+// console.log(addArrow(1, 2));
+
+function addDecl(a, b) {
+  return a + b;
+}
+
+const addExpr = function (a, b) {
+  return a + b;
+};
+
+const addArrow = (a, b) => a + b;
