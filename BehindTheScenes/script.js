@@ -87,3 +87,12 @@ const calcAgeArrow = (birthYear) => {
   console.log(this);
 };
 calcAgeArrow(2003);
+
+const Vedant = {
+  year: 2003,
+  calcAge: function () {
+    console.log(this);
+    console.log(2023 - this.year);
+  },
+};
+Vedant.calcAge();
