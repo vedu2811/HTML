@@ -32,7 +32,6 @@ function calcAge(birthYear) {
 
 const firstName = "Vedant";
 calcAge(2003);
-*/
 
 console.log(me);
 // console.log(job);
@@ -73,3 +72,6 @@ const z = 3;
 console.log(x === window.x);
 console.log(y === window.y);
 console.log(z === window.z);
+*/
+
+console.log(this);
