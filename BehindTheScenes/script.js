@@ -75,3 +75,9 @@ console.log(z === window.z);
 */
 
 console.log(this);
+
+const calcAge = function (birthYear) {
+  console.log(2024 - birthYear);
+  console.log(this);
+};
+calcAge(2003);
