@@ -96,3 +96,9 @@ const Vedant = {
   },
 };
 Vedant.calcAge();
+
+const matilda = {
+  year: 2017,
+};
+matilda.calcAge = Vedant.calcAge;
+matilda.calcAge();
