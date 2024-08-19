@@ -104,7 +104,6 @@ matilda.calcAge();
 
 const f = Vedant.calcAge;
 // f();
-*/
 
 // var firstName = "matilda";
 
@@ -153,3 +152,19 @@ const addArrow = (a, b) => {
   return a + b;
 };
 addArrow(2, 3, 4, 5); // Reference Error
+*/
+
+let age = 30;
+let oldAge = age;
+age = 31;
+console.log(age);
+console.log(oldAge);
+
+const me = {
+  name: "vedant",
+  age: 21,
+};
+const friend = me;
+friend.age = 25;
+console.log("Friend", friend);
+console.log("Me", me); //CONFUSION
