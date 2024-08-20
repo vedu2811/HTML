@@ -126,7 +126,13 @@ const playersFinal = [...players1, "Thiago", "Coutinho", "Perisic"];
 
 // 5
 const { team1, x: draw, team2 } = { ...game.odds };
-console.log(team1, draw, team2);
+// console.log(team1, draw, team2);
+
+// 6
+const printGoals = function (...playerNames) {
+  console.log(...playerNames, ...game.scored, game.scored.length);
+};
+printGoals("Davies", "Muller", "Lewandowski", "Kimmich");
 
 /*
 ////////////////////////////////
