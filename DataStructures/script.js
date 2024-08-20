@@ -54,16 +54,10 @@ const restaurant = {
   },
 };
 
-const rest1 = {
-  name: "capri",
-  // numGuests: 20,
-  numGuests: 0,
-};
-
-const rest2 = {
-  name: "la piazza",
-  owner: "abcd",
-};
+/*
+////////////////////////////////
+// Coding challenge 1
+////////////////////////////////
 
 const game = {
   team1: "Bayern Munich",
@@ -138,10 +132,19 @@ printGoals(...game.scored);
 team1 < team2 && console.log("team 1 winning");
 team2 < team1 && console.log("Team 2 winning");
 
-/*
 ////////////////////////////////
 // Logical Assignment Operator
 ////////////////////////////////
+const rest1 = {
+  name: "capri",
+  // numGuests: 20,
+  numGuests: 0,
+};
+
+const rest2 = {
+  name: "la piazza",
+  owner: "abcd",
+};
 
 // OR Assignment operator
 // rest1.numGuests = rest1.numGuests || 10;
