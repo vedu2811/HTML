@@ -82,6 +82,8 @@ if (restaurant.orderPizza) {
   restaurant.orderPizza("mushroom", "spinach");
 }
 
+restaurant.orderPizza && restaurant.orderPizza("mushroom", "spinach");
+
 /*
 //////////////////////////////////
 // Rest Pattern and Parameters
