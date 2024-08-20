@@ -54,6 +54,10 @@ const restaurant = {
   },
 };
 
+restaurant.numGuests = 0;
+const guests = restaurant.numGuests || 10;
+console.log(guests);
+
 /*
 /////////////////////////////////////
 // SHORT CIRCUITING (&& and ||)
