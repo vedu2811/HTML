@@ -49,6 +49,8 @@ const restaurant = {
   },
 };
 
+// 1) DESTUCTURING
+
 //SPREAD, because on RIGHT SIDE of '='
 const arr = [1, 2, ...[3, 4]];
 
@@ -65,6 +67,18 @@ console.log(pizza, risotto, otherFood);
 //Objects
 const { sat, ...weekDays } = restaurant.openingHours;
 console.log(weekDays);
+
+// 2) FUNCTIONS
+const add = function (...numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+  }
+  console.log(sum);
+};
+add(2, 3);
+add(3, 4, 5, 6);
+add(1, 2, 3, 4, 5, 5, 6);
 
 /*
 /////////////////////////////////
