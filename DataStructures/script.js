@@ -54,6 +54,15 @@ const restaurant = {
   },
 };
 
+// Properties of Logical Operators:
+// use any data type, return any data type, short-circuiting
+console.log(3 || "Vedant");
+console.log("" || "Vedant");
+console.log(true || 0);
+console.log(undefined || null);
+
+console.log(undefined || 0 || "" || "hello" || 23 || null);
+
 /*
 //////////////////////////////////
 // Rest Pattern and Parameters
