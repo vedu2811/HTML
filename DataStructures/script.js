@@ -135,6 +135,8 @@ printGoals("Davies", "Muller", "Lewandowski", "Kimmich");
 printGoals(...game.scored);
 
 // 7
+team1 < team2 && console.log("team 1 winning");
+team2 < team1 && console.log("Team 2 winning");
 
 /*
 ////////////////////////////////
