@@ -122,7 +122,11 @@ const allPlayers = [...players1, ...players2];
 
 // 4
 const playersFinal = [...players1, "Thiago", "Coutinho", "Perisic"];
-console.log(playersFinal);
+// console.log(playersFinal);
+
+// 5
+const { team1, x: draw, team2 } = { ...game.odds };
+console.log(team1, draw, team2);
 
 /*
 ////////////////////////////////
