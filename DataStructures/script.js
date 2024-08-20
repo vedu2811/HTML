@@ -54,6 +54,11 @@ const restaurant = {
   },
 };
 
+/*
+//////////////////////////////////
+// Rest Pattern and Parameters
+//////////////////////////////////
+
 // 1) DESTUCTURING
 
 //SPREAD, because on RIGHT SIDE of '='
@@ -91,7 +96,6 @@ add(...x);
 restaurant.orderPizza("mushrrom", "corn", "tomato", "olives");
 restaurant.orderPizza("mushroom");
 
-/*
 /////////////////////////////////
 Spread Operator (...)
 /////////////////////////////////
