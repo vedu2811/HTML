@@ -78,6 +78,10 @@ console.log(1 && 7);
 
 console.log("hello" && 23 && null && "vedant");
 
+if (restaurant.orderPizza) {
+  restaurant.orderPizza("mushroom", "spinach");
+}
+
 /*
 //////////////////////////////////
 // Rest Pattern and Parameters
