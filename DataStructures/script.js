@@ -41,6 +41,12 @@ const restaurant = {
       `order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
   },
+
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(
+      `Here is Your delicious pasta with ${ing1}, ${ing2}, and ${ing3}`
+    );
+  },
 };
 
 const arr = [7, 8, 9];
@@ -69,6 +75,15 @@ const letters = [...str, " ", "S."];
 console.log(letters);
 console.log(...str);
 // console.log(`${...str} Schemedthmann`);
+
+const ingredients = [
+  prompt("Let's make Pasta! Ingredient 1?"),
+  prompt("Ingredient 2?"),
+  prompt("Ingredient 3?"),
+];
+console.log(ingredients);
+
+restaurant.orderPasta(...ingredients);
 
 /*
 /////////////////////////////////
