@@ -85,6 +85,15 @@ console.log(ingredients);
 
 restaurant.orderPasta(...ingredients);
 
+//Objects
+const newRestaurant = { ...restaurant, founder: "vedant", foundedIn: 1998 };
+console.log(newRestaurant);
+
+const restaurantCopy = { ...restaurant };
+restaurantCopy.name = "ristorante Roma";
+console.log(restaurantCopy.name);
+console.log(restaurant.name);
+
 /*
 /////////////////////////////////
 Destructuring Objects
