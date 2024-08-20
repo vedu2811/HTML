@@ -118,7 +118,11 @@ const [gk, ...fieldPlayers] = players1[0];
 
 // 3
 const allPlayers = [...players1, ...players2];
-console.log(allPlayers);
+// console.log(allPlayers);
+
+// 4
+const playersFinal = [...players1, "Thiago", "Coutinho", "Perisic"];
+console.log(playersFinal);
 
 /*
 ////////////////////////////////
