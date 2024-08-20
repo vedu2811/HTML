@@ -107,9 +107,8 @@ const game = {
 };
 
 // 1
-const players1 = [game.players[0]];
-const players2 = [game.players[1]];
-// console.log(players1, players2);
+const [players1, players2] = game.players;
+console.log(players1, players2);
 
 // 2
 const [gk, ...fieldPlayers] = players1[0];
@@ -132,7 +131,9 @@ const { team1, x: draw, team2 } = { ...game.odds };
 const printGoals = function (...playerNames) {
   console.log(...playerNames, ...game.scored, game.scored.length);
 };
-printGoals("Davies", "Muller", "Lewandowski", "Kimmich");
+// printGoals("Davies", "Muller", "Lewandowski", "Kimmich");
+
+// 7
 
 /*
 ////////////////////////////////
