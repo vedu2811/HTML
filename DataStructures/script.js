@@ -111,9 +111,9 @@ const [players1, players2] = game.players;
 console.log(players1, players2);
 
 // 2
-const [gk, ...fieldPlayers] = players1[0];
-// console.log(gk);
-// console.log(fieldPlayers);
+const [gk, ...fieldPlayers] = players1;
+console.log(gk);
+console.log(fieldPlayers);
 
 // 3
 const allPlayers = [...players1, ...players2];
