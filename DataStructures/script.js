@@ -74,6 +74,7 @@ console.log(guests2);
 console.log("-----AND-----");
 console.log(0 && "Jonas");
 console.log(7 && "Vedant");
+console.log(1 && 7);
 
 console.log("hello" && 23 && null && "vedant");
 
