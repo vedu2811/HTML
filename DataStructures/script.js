@@ -63,6 +63,13 @@ const mainMenuCopy = [...restaurant.mainMenu];
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 console.log(menu);
 
+// Iterables are arrays,strings,maps,sets (NOT OBJECTS)
+const str = "Jonas";
+const letters = [...str, " ", "S."];
+console.log(letters);
+console.log(...str);
+// console.log(`${...str} Schemedthmann`);
+
 /*
 /////////////////////////////////
 Destructuring Objects
