@@ -39,3 +39,10 @@ console.log(arr);
 
 let [main, , secondary] = restaurant.categories;
 console.log(main, secondary);
+
+// let temp = main;
+// main = secondary;
+// secondary = temp;
+
+[main, secondary] = [secondary, main];
+console.log(main, secondary);
