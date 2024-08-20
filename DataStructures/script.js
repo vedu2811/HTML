@@ -54,6 +54,7 @@ const restaurant = {
   },
 };
 
+console.log("-----OR-----");
 // Properties of Logical Operators:
 // use any data type, return any data type, short-circuiting
 console.log(3 || "Vedant");
@@ -69,6 +70,12 @@ console.log(guests1);
 
 const guests2 = restaurant.numGuests || 10;
 console.log(guests2);
+
+console.log("-----AND-----");
+console.log(0 && "Jonas");
+console.log(7 && "Vedant");
+
+console.log("hello" && 23 && null && "vedant");
 
 /*
 //////////////////////////////////
