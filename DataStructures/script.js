@@ -117,21 +117,22 @@ console.log(fieldPlayers);
 
 // 3
 const allPlayers = [...players1, ...players2];
-// console.log(allPlayers);
+console.log(allPlayers);
 
 // 4
 const playersFinal = [...players1, "Thiago", "Coutinho", "Perisic"];
-// console.log(playersFinal);
+console.log(playersFinal);
 
 // 5
 const { team1, x: draw, team2 } = { ...game.odds };
-// console.log(team1, draw, team2);
+console.log(team1, draw, team2);
 
 // 6
 const printGoals = function (...playerNames) {
-  console.log(...playerNames, ...game.scored, game.scored.length);
+  console.log(`${playerNames.length} goals scored:`, ...playerNames);
 };
-// printGoals("Davies", "Muller", "Lewandowski", "Kimmich");
+printGoals("Davies", "Muller", "Lewandowski", "Kimmich");
+printGoals(...game.scored);
 
 // 7
 
