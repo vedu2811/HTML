@@ -49,6 +49,13 @@ const restaurant = {
   },
 };
 
+//SPREAD, because on RIGHT SIDE of '='
+const arr = [1, 2, ...[3, 4]];
+
+//REST, because on LEFT SIDE of '='
+const [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(a, b, others);
+
 /*
 /////////////////////////////////
 Spread Operator (...)
