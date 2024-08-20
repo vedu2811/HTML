@@ -109,7 +109,12 @@ const game = {
 // 1
 const players1 = [game.players[0]];
 const players2 = [game.players[1]];
-console.log(players1, players2);
+// console.log(players1, players2);
+
+// 2
+const [gk, ...fieldPlayers] = players1[0];
+console.log(gk);
+console.log(fieldPlayers);
 
 /*
 ////////////////////////////////
