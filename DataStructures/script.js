@@ -32,6 +32,10 @@ const restaurant = {
   },
 };
 
+/*
+//////////////////////////////////
+DESTUCTURING ARRAYS
+//////////////////////////////////
 const arr = [2, 3, 4];
 const a = arr[0];
 const b = arr[1];
@@ -66,3 +70,4 @@ console.log(i, j, k);
 // Default values
 const [p = 1, q = 1, r = 1] = [8];
 console.log(p, q, r);
+*/
