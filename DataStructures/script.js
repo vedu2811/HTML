@@ -54,6 +54,11 @@ const restaurant = {
   },
 };
 
+/*
+/////////////////////////////////////
+// SHORT CIRCUITING (&& and ||)
+/////////////////////////////////////
+
 console.log("-----OR-----");
 // Properties of Logical Operators:
 // use any data type, return any data type, short-circuiting
@@ -84,7 +89,6 @@ if (restaurant.orderPizza) {
 
 restaurant.orderPizza && restaurant.orderPizza("mushroom", "spinach");
 
-/*
 //////////////////////////////////
 // Rest Pattern and Parameters
 //////////////////////////////////
