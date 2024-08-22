@@ -128,6 +128,7 @@ for (const [i, el] of menu.entries()) {
   console.log(`${i + 1}: ${el}`);
 }
 // console.log([...menu.entries()]);
+*/
 
 ////////////////////////////////
 // Coding challenge 1
@@ -173,6 +174,17 @@ const game = {
     team2: 6.5,
   },
 };
+
+////////////////////////////////////
+// Coding Challenge - 2
+////////////////////////////////////
+
+// 1.
+for (const [i, value] of game.scored.entries()) {
+  console.log(`Goal ${i + 1}: ${value}`);
+}
+
+/*
 
 // 1
 const [players1, players2] = game.players;
