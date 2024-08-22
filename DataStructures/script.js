@@ -70,6 +70,10 @@ for (const day of days) {
   console.log(`On ${day}, we open at ${open}`);
 }
 
+// Methods
+console.log(restaurant.order?.(0, 1) ?? "Method does not exist");
+console.log(restaurant.orderVedant?.(0, 1) ?? "Method does not exist");
+
 /*
 ///////////////////////////////
 // FOR-OF loop
