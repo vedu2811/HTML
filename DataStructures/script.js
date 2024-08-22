@@ -54,6 +54,11 @@ const restaurant = {
   },
 };
 
+/*
+////////////////////////////
+// Optional Chaining
+////////////////////////////
+
 if (restaurant.openingHours && restaurant.openingHours.mon)
   console.log(restaurant.openingHours.mon.open);
 
@@ -86,7 +91,6 @@ if (users.length > 0) {
   console.log("Users array empty");
 }
 
-/*
 ///////////////////////////////
 // FOR-OF loop
 ///////////////////////////////
