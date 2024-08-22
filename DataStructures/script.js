@@ -185,9 +185,9 @@ for (const [i, value] of game.scored.entries()) {
 }
 
 // 2.
-const entry = Object.entries(game.odds);
+const entry = Object.values(game.odds);
 let sum = 0;
-for (const [, odd] of entry) {
+for (const odd of entry) {
   sum += odd;
 }
 const avg = sum / entry.length;
