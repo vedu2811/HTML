@@ -204,6 +204,13 @@ for (const [team, odd] of Object.entries(game.odds)) {
 // console.log(`Odd of draw: ${entry[1][1]}`);
 // console.log(`Odd of victory ${game.team2}: ${entry[2][1]}`);
 
+// BONUS.
+const scorers = {};
+for (const players of game.scored) {
+  scorers[players] ? scorers[players]++ : (scorers[players] = 1);
+}
+console.log(scorers);
+
 /*
 
 // 1
