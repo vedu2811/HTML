@@ -195,9 +195,14 @@ console.log(`Average = ${avg}`);
 
 // 3.
 
-console.log(`Odd of victory ${game.team1}: ${entry[0][1]}`);
-console.log(`Odd of draw: ${entry[1][1]}`);
-console.log(`Odd of victory ${game.team2}: ${entry[2][1]}`);
+for (const [team, odd] of Object.entries(game.odds)) {
+  const teamStr = team === "x" ? "draw" : `victory ${game[team]}`;
+  console.log(`Odd of ${teamStr}: ${odd}`);
+}
+
+// console.log(`Odd of victory ${game.team1}: ${entry[0][1]}`);
+// console.log(`Odd of draw: ${entry[1][1]}`);
+// console.log(`Odd of victory ${game.team2}: ${entry[2][1]}`);
 
 /*
 
