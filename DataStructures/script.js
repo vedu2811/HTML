@@ -193,6 +193,12 @@ for (const [, odd] of entry) {
 const avg = sum / entry.length;
 console.log(`Average = ${avg}`);
 
+// 3.
+
+console.log(`Odd of victory ${game.team1}: ${entry[0][1]}`);
+console.log(`Odd of draw: ${entry[1][1]}`);
+console.log(`Odd of victory ${game.team2}: ${entry[2][1]}`);
+
 /*
 
 // 1
