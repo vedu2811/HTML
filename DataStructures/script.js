@@ -128,7 +128,6 @@ for (const [i, el] of menu.entries()) {
   console.log(`${i + 1}: ${el}`);
 }
 // console.log([...menu.entries()]);
-*/
 
 ////////////////////////////////
 // Coding challenge 1
@@ -210,8 +209,6 @@ for (const players of game.scored) {
   scorers[players] ? scorers[players]++ : (scorers[players] = 1);
 }
 console.log(scorers);
-
-/*
 
 // 1
 const [players1, players2] = game.players;
