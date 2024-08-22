@@ -68,6 +68,10 @@ console.log(openStr);
 const values = Object.values(openingHours);
 console.log(values);
 
+//Entire Object
+const entries = Object.entries(openingHours);
+console.log(entries);
+
 /*
 ////////////////////////////
 // Optional Chaining
