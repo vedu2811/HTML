@@ -57,6 +57,12 @@ const restaurant = {
 if (restaurant.openingHours && restaurant.openingHours.mon)
   console.log(restaurant.openingHours.mon.open);
 
+// console.log(restaurant.openingHours.mon.open);
+
+//With Optional Chaining
+console.log(restaurant.openingHours.mon?.open);
+console.log(restaurant.openingHours?.mon?.open);
+
 /*
 ///////////////////////////////
 // FOR-OF loop
