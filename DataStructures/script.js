@@ -30,28 +30,23 @@ const restaurant = {
   //ES6 Enhanced Object Literal
   openingHours,
 
-  order: function (starterIndex, mainIndex) {
+  order(starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
 
-  orderDelivery: function ({
-    starterIndex = 1,
-    mainIndex = 0,
-    time = "20:00",
-    address,
-  }) {
+  orderDelivery({ starterIndex = 1, mainIndex = 0, time = "20:00", address }) {
     console.log(
       `order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
   },
 
-  orderPasta: function (ing1, ing2, ing3) {
+  orderPasta(ing1, ing2, ing3) {
     console.log(
       `Here is Your delicious pasta with ${ing1}, ${ing2}, and ${ing3}`
     );
   },
 
-  orderPizza: function (mainIngredient, ...otherIng) {
+  orderPizza(mainIngredient, ...otherIng) {
     console.log(mainIngredient);
     console.log(otherIng);
   },
