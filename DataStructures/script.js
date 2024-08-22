@@ -184,6 +184,15 @@ for (const [i, value] of game.scored.entries()) {
   console.log(`Goal ${i + 1}: ${value}`);
 }
 
+// 2.
+const entry = Object.entries(game.odds);
+let sum = 0;
+for (const [, odd] of entry) {
+  sum += odd;
+}
+const avg = sum / entry.length;
+console.log(`Average = ${avg}`);
+
 /*
 
 // 1
