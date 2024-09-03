@@ -80,6 +80,11 @@ console.log(arr);
 gameEvents.delete(64);
 console.log(gameEvents);
 
+// 3.
+console.log(
+  `An event happened, on average, every ${90 / gameEvents.size} minutes`
+);
+
 /*
 ///////////////////////////////////////
 // Maps: Iteration
