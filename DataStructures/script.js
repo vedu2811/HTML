@@ -54,6 +54,11 @@ const restaurant = {
   },
 };
 
+/*
+////////////////////////////////////
+// Maps: Fundamentals
+////////////////////////////////////
+
 const rest = new Map();
 rest.set("name", "Classico italiano");
 rest.set(1, "Firenze, Italy");
@@ -85,7 +90,6 @@ console.log(rest.size);
 
 console.log(rest.get(arr));
 
-/*
 ////////////////////////////////
 // Sets
 ////////////////////////////////
