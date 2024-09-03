@@ -91,6 +91,10 @@ checkMiddleSeat("11B");
 checkMiddleSeat("23C");
 checkMiddleSeat("3E");
 
+console.log(new String("Vedant"));
+console.log(typeof new String("Vedant"));
+console.log(typeof new String("Vedant").slice(2));
+
 /*
 ////////////////////////////////
 // Coding challenge 3
