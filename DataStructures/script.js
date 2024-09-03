@@ -54,6 +54,7 @@ const restaurant = {
   },
 };
 
+/*
 ////////////////////////////////
 // Coding challenge 3
 ////////////////////////////////
@@ -91,7 +92,6 @@ for (const [key, value] of gameEvents) {
   console.log(`[${half} HALF] ${key}: ${value}`);
 }
 
-/*
 ///////////////////////////////////////
 // Maps: Iteration
 ///////////////////////////////////////
