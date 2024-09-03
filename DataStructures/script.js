@@ -54,6 +54,11 @@ const restaurant = {
   },
 };
 
+/*
+////////////////////////////////
+// Sets
+////////////////////////////////
+
 const orderSet = new Set([
   "Pasta",
   "Pizza",
@@ -90,7 +95,6 @@ console.log(
 
 console.log(new Set("vedant jalan").size);
 
-/*
 /////////////////////////////////
 // Object.keys/values/entries
 /////////////////////////////////
