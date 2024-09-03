@@ -54,7 +54,7 @@ const restaurant = {
   },
 };
 
-const airline = "TAP Air Protugal";
+const airline = "TAP Air Portugal";
 const plane = "A320";
 
 console.log(plane[0]);
@@ -64,6 +64,13 @@ console.log("B737"[0]);
 
 console.log(airline.length);
 console.log("B737".length);
+
+console.log(airline.indexOf("r"));
+console.log(airline.lastIndexOf("r"));
+console.log(airline.indexOf("Portugal"));
+
+console.log(airline.slice(4));
+console.log(airline.slice(4, 7));
 
 /*
 ////////////////////////////////
