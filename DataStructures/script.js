@@ -87,8 +87,8 @@ console.log(
 
 // 4.
 for (const [key, value] of gameEvents) {
-  const half = key <= 45 ? "[FIRST HALF]" : "[SECOND HALF]";
-  console.log(`${half} ${key}: ${value}`);
+  const half = key <= 45 ? "FIRST" : "SECOND";
+  console.log(`[${half} HALF] ${key}: ${value}`);
 }
 
 /*
