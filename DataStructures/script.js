@@ -53,6 +53,10 @@ const restaurant = {
     console.log(otherIng);
   },
 };
+/*
+///////////////////////////////////////
+// Maps: Iteration
+///////////////////////////////////////
 
 const question = new Map([
   ["question", "What is the best prog language in the world?"],
@@ -84,7 +88,7 @@ console.log(question.get(answer === question.get("correct")));
 console.log([...question]);
 console.log([...question.keys()]);
 console.log([...question.values()]);
-/*
+
 ////////////////////////////////////
 // Maps: Fundamentals
 ////////////////////////////////////
