@@ -70,6 +70,16 @@ console.log(Object.entries(openingHours));
 const hoursMap = new Map(Object.entries(openingHours));
 console.log(hoursMap);
 
+//Quiz App
+console.log(question.get("question"));
+for (const [key, value] of question) {
+  if (typeof key === "number") console.log(`Answer of ${key}: ${value}`);
+}
+const answer = Number(prompt("Your Answer"));
+console.log(answer);
+
+console.log(question.get(answer === question.get("correct")));
+
 /*
 ////////////////////////////////////
 // Maps: Fundamentals
