@@ -54,6 +54,11 @@ const restaurant = {
   },
 };
 
+/*
+////////////////////////////////
+// Strings Part 1
+////////////////////////////////
+
 const airline = "TAP Air Portugal";
 const plane = "A320";
 
@@ -95,7 +100,6 @@ console.log(new String("Vedant"));
 console.log(typeof new String("Vedant"));
 console.log(typeof new String("Vedant").slice(2));
 
-/*
 ////////////////////////////////
 // Coding challenge 3
 ////////////////////////////////
