@@ -74,8 +74,10 @@ orderSet.add("Garlic Bread");
 orderSet.delete("Risotto");
 console.log(orderSet);
 
-orderSet.clear();
-console.log(orderSet);
+// orderSet.clear();
+// console.log(orderSet);
+
+for (const order of orderSet) console.log(order);
 
 /*
 /////////////////////////////////
