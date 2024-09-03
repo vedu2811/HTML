@@ -67,6 +67,12 @@ rest
   .set(false, "We are closed :(");
 
 // console.log(rest);
+console.log(rest.get("name"));
+console.log(rest.get(true));
+console.log(rest.get(1));
+
+const time = 21;
+console.log(rest.get(time > rest.get("open") && time < rest.get("close")));
 
 /*
 ////////////////////////////////
