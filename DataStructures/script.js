@@ -76,6 +76,11 @@ const capitalizeName = function (name) {
 capitalizeName("Jessica ann Smith davis");
 capitalizeName("vedant jalan");
 
+//Padding
+const message = "go to gate 23";
+console.log(message.padStart(25, "+").padEnd(30, "+"));
+console.log("Jonas".padStart(20, "+").padEnd(30, "+"));
+
 /*
 ////////////////////////////////
 // Strings Part 2
