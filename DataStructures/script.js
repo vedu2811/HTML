@@ -66,6 +66,14 @@ const passengerCorrect =
   passengerLower[0].toUpperCase() + passengerLower.slice(1);
 console.log(passengerCorrect);
 
+// Comparing emails
+const email = "vedant28j@gmail.com";
+const loginEmail = "  Vedant28j@GmaiL.coM \n";
+
+const lowerEmail = loginEmail.toLowerCase();
+const trimmedEmail = lowerEmail.trim();
+console.log(trimmedEmail);
+
 /*
 ////////////////////////////////
 // Strings Part 1
