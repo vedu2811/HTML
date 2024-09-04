@@ -54,6 +54,11 @@ const restaurant = {
   },
 };
 
+/*
+////////////////////////////////
+// Strings Part 1
+////////////////////////////////
+
 const airline = "TAP Air Portugal";
 
 console.log(airline.toLowerCase());
@@ -111,7 +116,6 @@ checkBaggage("I have a Laptop, some food and a pocket Knife");
 checkBaggage("Socks and camera");
 checkBaggage("Got some snacks and a gun for protection");
 
-/*
 ////////////////////////////////
 // Strings Part 1
 ////////////////////////////////
