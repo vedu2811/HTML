@@ -81,6 +81,16 @@ const message = "go to gate 23";
 console.log(message.padStart(25, "+").padEnd(30, "+"));
 console.log("Jonas".padStart(20, "+").padEnd(30, "+"));
 
+const maskCreditCard = function (number) {
+  const str = number + "";
+  const last = str.slice(-4);
+  return last.padStart(str.length, "*");
+};
+
+console.log(maskCreditCard(6475467557656453));
+console.log(maskCreditCard(5346436346533453));
+console.log(maskCreditCard("35234643624562453643534"));
+
 /*
 ////////////////////////////////
 // Strings Part 2
