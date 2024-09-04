@@ -57,6 +57,21 @@ const restaurant = {
 const flights =
   "_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30";
 
+const flight = flights.split("+");
+for (const n of flight) {
+  const [status, dep, arr, time] = n.trim().split(";");
+
+  const time1 = time.replace(":", "h");
+  const dep1 = dep.toUpperCase().slice(0, 3);
+  const arr1 = dep.toUpperCase().slice(0, 3);
+  const status1 = status.replaceAll("_", " ").trim();
+
+  const output = `${
+    status1.startsWith("Delayed") ? "🔴" : ""
+  } ${status1} from ${dep1} to ${arr1} (${time1})`.padStart(45);
+  console.log(output);
+}
+
 /*
 //////////////////////////////////
 // Coding Challenge 4
