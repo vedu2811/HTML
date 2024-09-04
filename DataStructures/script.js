@@ -58,6 +58,25 @@ const restaurant = {
 // Coding Challenge 4
 //////////////////////////////////
 
+document.body.append(document.createElement("textarea"));
+document.body.append(document.createElement("button"));
+
+document.querySelector("button").addEventListener("click", function () {
+  const text = document.querySelector("textarea").value;
+
+  const variables = text.split("\n");
+  let i = 1;
+  for (const n of variables) {
+    const [firstName, lastName] = n.toLowerCase().trim().split("_");
+
+    const final =
+      firstName + lastName.replace(lastName[0], lastName[0].toUpperCase());
+    const emoji = "✅".repeat(i);
+    console.log(final.padEnd(20, " ") + emoji);
+    i++;
+  }
+});
+
 /*
 ////////////////////////////////
 // Strings Part 3
