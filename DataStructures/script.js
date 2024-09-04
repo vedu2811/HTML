@@ -78,6 +78,11 @@ const normalizedEmail = loginEmail.toLowerCase().trim();
 console.log(normalizedEmail);
 console.log(email === normalizedEmail);
 
+// Replacing
+const priceGB = "288,97#";
+const priceUS = priceGB.replace("#", "$").replace(",", ".");
+console.log(priceUS);
+
 /*
 ////////////////////////////////
 // Strings Part 1
