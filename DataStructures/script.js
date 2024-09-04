@@ -54,9 +54,17 @@ const restaurant = {
   },
 };
 
+console.log("a+very+nice+string".split("+"));
+console.log("Vedant Jalan".split(" "));
+
+const [firstName, lastName] = "Vedant Jalan".split(" ");
+
+const newName = ["Mr.", firstName, lastName.toUpperCase()].join(" ");
+console.log(newName);
+
 /*
 ////////////////////////////////
-// Strings Part 1
+// Strings Part 2
 ////////////////////////////////
 
 const airline = "TAP Air Portugal";
