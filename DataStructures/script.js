@@ -91,6 +91,10 @@ console.log(maskCreditCard(6475467557656453));
 console.log(maskCreditCard(5346436346533453));
 console.log(maskCreditCard("35234643624562453643534"));
 
+//Repeat
+const message2 = "Bad Weather... All Departures Delayed";
+console.log(message2.repeat(5));
+
 /*
 ////////////////////////////////
 // Strings Part 2
