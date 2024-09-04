@@ -54,6 +54,11 @@ const restaurant = {
   },
 };
 
+const airline = "TAP Air Portugal";
+
+console.log(airline.toLowerCase());
+console.log(airline.toUpperCase());
+
 /*
 ////////////////////////////////
 // Strings Part 1
