@@ -59,6 +59,13 @@ const airline = "TAP Air Portugal";
 console.log(airline.toLowerCase());
 console.log(airline.toUpperCase());
 
+// Fix capitalization in name..
+const passenger = "vEdANt"; //Vedant
+const passengerLower = passenger.toLowerCase();
+const passengerCorrect =
+  passengerLower[0].toUpperCase() + passengerLower.slice(1);
+console.log(passengerCorrect);
+
 /*
 ////////////////////////////////
 // Strings Part 1
