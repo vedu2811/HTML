@@ -173,6 +173,8 @@ lufthansa.buyPlane = function () {
   this.planes++;
   console.log(this.planes);
 };
-lufthansa.buyPlane(); //Works
+// lufthansa.buyPlane(); //Works
 
-document.querySelector(".buy").addEventListener("click", lufthansa.buyPlane); // Does not Work
+document
+  .querySelector(".buy")
+  .addEventListener("click", lufthansa.buyPlane.bind(lufthansa));
