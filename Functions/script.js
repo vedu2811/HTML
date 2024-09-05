@@ -61,3 +61,8 @@ checkIn(flight, vedant);
 const oneWord = function (str) {
   return str.replaceAll(" ", "").tolowercase();
 };
+
+const upperFirstWord = function (str) {
+  const [first, ...others] = str.split(" ");
+  return [first.touppercase(), ...others].join(" ");
+};
