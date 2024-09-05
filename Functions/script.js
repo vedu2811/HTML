@@ -117,3 +117,14 @@ const lufthansa = {
 lufthansa.book(239, "Vedant Jalan");
 lufthansa.book(635, "Jonas");
 console.log(lufthansa);
+
+const eurowings = {
+  name: "eurowings",
+  iataCode: "EW",
+  bookings: [],
+};
+
+const book = lufthansa.book;
+
+// Does not WORK
+// book(23, "Sarah Williams");
