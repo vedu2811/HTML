@@ -97,3 +97,6 @@ greeterHey("Vedant");
 greeterHey("Jonas");
 
 greet("Hello")("Vedant");
+
+const greetArr = (greeting) => (name) => console.log(`${greeting} ${name}`);
+greetArr("Hi")("Vedant");
