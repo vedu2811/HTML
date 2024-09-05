@@ -84,7 +84,6 @@ const high5 = function () {
 document.body.addEventListener("click", high5);
 
 ["jonas", "Martha", "Adam"].forEach(high5);
-*/
 
 // Function Returning a function
 const greet = function (greeting) {
@@ -100,3 +99,16 @@ greet("Hello")("Vedant");
 
 const greetArr = (greeting) => (name) => console.log(`${greeting} ${name}`);
 greetArr("Hi")("Vedant");
+*/
+
+const lufthansa = {
+  airline: "Lufthansa",
+  iataCode: "LH",
+  bookings: [],
+
+  book(flightNum, name) {
+    console.log(
+      `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
+    );
+  },
+};
