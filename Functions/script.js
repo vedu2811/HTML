@@ -119,7 +119,7 @@ lufthansa.book(635, "Jonas");
 console.log(lufthansa);
 
 const eurowings = {
-  name: "eurowings",
+  name: "Eurowings",
   iataCode: "EW",
   bookings: [],
 };
@@ -128,3 +128,6 @@ const book = lufthansa.book;
 
 // Does not WORK
 // book(23, "Sarah Williams");
+
+book.call(eurowings, 23, "Sarah Williams");
+console.log(eurowings);
