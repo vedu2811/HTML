@@ -46,12 +46,14 @@ const checkIn = function (flightNum, passenger) {
   }
 };
 
-checkIn(flight, vedant);
-console.log(flight);
-console.log(vedant);
+// checkIn(flight, vedant);
+// console.log(flight);
+// console.log(vedant);
 
 const newPassport = function (person) {
   person.passport = Math.random() * 1000000000000;
 };
 newPassport(vedant);
 checkIn(flight, vedant);
+
+// Javascript does not have 'passby reference' but only 'passby values'
