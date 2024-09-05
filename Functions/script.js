@@ -56,7 +56,6 @@ newPassport(vedant);
 checkIn(flight, vedant);
 
 // Javascript does not have 'passby reference' but only 'passby values'
-*/
 
 const oneWord = function (str) {
   return str.replaceAll(" ", "").toLowerCase();
@@ -85,3 +84,14 @@ const high5 = function () {
 document.body.addEventListener("click", high5);
 
 ["jonas", "Martha", "Adam"].forEach(high5);
+*/
+
+// Function Returning a function
+const greet = function (greeting) {
+  return function (name) {
+    console.log(`${greeting} ${name}`);
+  };
+};
+const greeterHey = greet("Hey");
+greeterHey("Vedant");
+greeterHey("Jonas");
