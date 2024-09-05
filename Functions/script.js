@@ -57,3 +57,7 @@ checkIn(flight, vedant);
 
 // Javascript does not have 'passby reference' but only 'passby values'
 */
+
+const oneWord = function (str) {
+  return str.replaceAll(" ", "").tolowercase();
+};
