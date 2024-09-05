@@ -112,3 +112,6 @@ const lufthansa = {
     );
   },
 };
+
+lufthansa.book(239, "Vedant Jalan");
+lufthansa.book(635, "Jonas");
