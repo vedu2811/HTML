@@ -129,6 +129,7 @@ const book = lufthansa.book;
 // Does not WORK
 // book(23, "Sarah Williams");
 
+// CALL Method
 book.call(eurowings, 23, "Sarah Williams");
 console.log(eurowings);
 
@@ -142,4 +143,9 @@ const swiss = {
 };
 
 book.call(swiss, 583, "Mary Cooper");
+console.log(swiss);
+
+// APPLY Method
+const flightData = [583, "George Cooper"];
+book.apply(swiss, flightData);
 console.log(swiss);
