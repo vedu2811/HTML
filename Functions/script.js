@@ -95,3 +95,5 @@ const greet = function (greeting) {
 const greeterHey = greet("Hey");
 greeterHey("Vedant");
 greeterHey("Jonas");
+
+greet("Hello")("Vedant");
