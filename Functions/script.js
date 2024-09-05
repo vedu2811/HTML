@@ -38,6 +38,14 @@ const vedant = {
 const checkIn = function (flightNum, passenger) {
   flightNum = "LH999";
   passenger.name = "Mr. " + passenger.name;
+
+  if (passenger.passport === 234123523442) {
+    alert("Checked In");
+  } else {
+    alert("Wrong Passport");
+  }
 };
 
 checkIn(flight, vedant);
+console.log(flight);
+console.log(vedant);
