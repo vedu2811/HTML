@@ -27,7 +27,6 @@ createBooking("LH123", 2);
 createBooking("LH123", 5);
 
 createBooking("LH123", undefined, 1000);
-*/
 
 const flight = "LH234";
 const vedant = {
@@ -57,3 +56,4 @@ newPassport(vedant);
 checkIn(flight, vedant);
 
 // Javascript does not have 'passby reference' but only 'passby values'
+*/
