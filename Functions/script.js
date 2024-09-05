@@ -149,3 +149,5 @@ console.log(swiss);
 const flightData = [583, "George Cooper"];
 book.apply(swiss, flightData);
 console.log(swiss);
+
+book.call(swiss, ...flightData); // BETTER
