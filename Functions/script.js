@@ -78,7 +78,10 @@ const transformer = function (str, fn) {
 transformer("JavaScript is the best!", upperFirstWord);
 transformer("JavaScript is the best!", oneWord);
 
+// JS uses callbacks all the time
 const high5 = function () {
   console.log("Hii");
 };
 document.body.addEventListener("click", high5);
+
+["jonas", "Martha", "Adam"].forEach(high5);
