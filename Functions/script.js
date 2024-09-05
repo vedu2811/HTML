@@ -170,6 +170,9 @@ lufthansa.planes = 300;
 lufthansa.buyPlane = function () {
   console.log(this);
 
-  this.plane++;
-  console.log(this.plane);
+  this.planes++;
+  console.log(this.planes);
 };
+lufthansa.buyPlane(); //Works
+
+document.querySelector(".buy").addEventListener("click", lufthansa.buyPlane); // Does not Work
