@@ -164,3 +164,12 @@ bookEW(23, "Steven Williams");
 const bookEW23 = book.bind(eurowings, 23);
 bookEW23("Vedant Jalan");
 bookEW23("Martha Cooper");
+
+// With Event Listeners
+lufthansa.planes = 300;
+lufthansa.buyPlane = function () {
+  console.log(this);
+
+  this.plane++;
+  console.log(this.plane);
+};
