@@ -28,3 +28,16 @@ createBooking("LH123", 5);
 
 createBooking("LH123", undefined, 1000);
 */
+
+const flight = "LH234";
+const vedant = {
+  name: "Vedant Jalan",
+  passport: 234123523442,
+};
+
+const checkIn = function (flightNum, passenger) {
+  flightNum = "LH999";
+  passenger.name = "Mr. " + passenger.name;
+};
+
+checkIn(flight, vedant);
