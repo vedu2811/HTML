@@ -59,7 +59,7 @@ checkIn(flight, vedant);
 */
 
 const oneWord = function (str) {
-  return str.replaceAll(" ", "").tolowercase();
+  return str.replaceAll(" ", "").toLowerCase();
 };
 
 const upperFirstWord = function (str) {
@@ -76,3 +76,4 @@ const transformer = function (str, fn) {
 };
 
 transformer("JavaScript is the best!", upperFirstWord);
+transformer("JavaScript is the best!", oneWord);
