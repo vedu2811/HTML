@@ -219,10 +219,10 @@ const poll = {
     if (answer >= 0 && answer <= 3) {
       this.answers[answer]++;
     }
-    // console.log(this.answers);
   },
 
-  displayResults(type) {
+  displayResults() {
+    const type = prompt("Output type: (array or string)?");
     if (type === "array") {
       console.log(this.answers);
     } else if (type === "string") {
@@ -232,6 +232,7 @@ const poll = {
     }
   },
 };
+poll.displayResults();
 
 // 2
 document
