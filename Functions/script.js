@@ -257,3 +257,10 @@ runOnce();
 })();
 
 (() => console.log("This will also never run again"))();
+
+{
+  const isPrivate = 12;
+  var notPrivate = 23;
+}
+// console.log(isPrivate);
+console.log(notPrivate);
