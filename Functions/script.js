@@ -198,7 +198,7 @@ const addTax1 = function (rate) {
 const addVAT1 = addTax1(0.23);
 console.log(addVAT1(100));
 console.log(addVAT1(23));
-*/
+
 ////////////////////////////////////////////////
 // Coding Challenge #1
 ////////////////////////////////////////////////
@@ -244,3 +244,6 @@ document
 // BONUS
 poll.displayResults.call({ answers: [5, 2, 3] }, "string");
 poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] });
+*/
+
+// Immediately invoked Function Expressions (IIFE)
