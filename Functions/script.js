@@ -246,4 +246,12 @@ poll.displayResults.call({ answers: [5, 2, 3] }, "string");
 poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] });
 */
 
+const runOnce = function () {
+  console.log("This can run again");
+};
+runOnce();
+
 // Immediately invoked Function Expressions (IIFE)
+(function () {
+  console.log("This will never run again");
+})();
