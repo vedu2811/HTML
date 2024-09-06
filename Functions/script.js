@@ -330,9 +330,7 @@ let colorBlue;
   const header = document.querySelector("h1");
   header.style.color = "red";
 
-  colorBlue = function () {
+  document.querySelector("body").addEventListener("click", function () {
     header.style.color = "blue";
-  };
+  });
 })();
-
-colorBlue();
