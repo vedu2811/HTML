@@ -223,17 +223,14 @@ const poll = {
     this.displayResults("string");
   },
 
+  // 3
   displayResults(type = "array") {
     const arr1 = [5, 2, 3];
     const arr2 = [1, 5, 3, 9, 6, 1];
     if (type === "array") {
       console.log(this.answers);
-      console.log(arr1);
-      console.log(arr2);
     } else if (type === "string") {
       console.log(`Poll results are ${this.answers.join(", ")}`);
-      console.log(`Poll results are ${arr1}`);
-      console.log(`Poll results are ${arr2}`);
     }
   },
 };
@@ -242,3 +239,7 @@ const poll = {
 document
   .querySelector(".poll")
   .addEventListener("click", poll.registerNewAnswer.bind(poll));
+
+// 4
+poll.displayResults.call({ answers: [5, 2, 3] }, "string");
+poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] });
