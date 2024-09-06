@@ -219,7 +219,17 @@ const poll = {
     if (answer >= 0 && answer <= 3) {
       this.answers[answer]++;
     }
-    console.log(this.answers);
+    // console.log(this.answers);
+  },
+
+  displayResults(type) {
+    if (type === "array") {
+      console.log(this.answers);
+    } else if (type === "string") {
+      console.log(`Poll results are ${this.answers}`);
+    } else {
+      console.log(this.answers);
+    }
   },
 };
 
