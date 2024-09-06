@@ -219,6 +219,7 @@ const poll = {
     if (answer >= 0 && answer <= this.answers.length) {
       this.answers[answer]++;
     }
+    // 4
     this.displayResults();
     this.displayResults("string");
   },
@@ -240,6 +241,6 @@ document
   .querySelector(".poll")
   .addEventListener("click", poll.registerNewAnswer.bind(poll));
 
-// 4
+// BONUS
 poll.displayResults.call({ answers: [5, 2, 3] }, "string");
 poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] });
