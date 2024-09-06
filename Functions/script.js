@@ -279,7 +279,6 @@ booker();
 booker();
 
 console.dir(booker);
-*/
 
 // Example 1
 let f;
@@ -320,3 +319,8 @@ const boardPassengers = function (n, wait) {
 
 const perGroup = 1000; // Will not work
 boardPassengers(180, 3);
+*/
+
+////////////////////////////////////////////
+// Coding challenge - 2
+////////////////////////////////////////////
