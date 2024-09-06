@@ -205,4 +205,14 @@ const poll = {
   question: "What is your favorite programming language?",
   options: ["0: Javascript", "1: Python", "2: Rust", "3: C++"],
   answers: new Array(4).fill(0),
+
+  registerNewAnswer() {
+    // 1.1
+    const answer = Number(
+      prompt(
+        "What is your favorite programming language?\n0: JavaScript\n1: Python\n2: Rust\n3: C++\n(Write option number)"
+      )
+    );
+  },
 };
+// poll.registerNewAnswer();
