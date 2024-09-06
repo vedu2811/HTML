@@ -199,8 +199,10 @@ const addVAT1 = addTax1(0.23);
 console.log(addVAT1(100));
 console.log(addVAT1(23));
 */
-
+////////////////////////////////////////////////
 // Coding Challenge #1
+////////////////////////////////////////////////
+
 const poll = {
   question: "What is your favorite programming language?",
   options: ["0: Javascript", "1: Python", "2: Rust", "3: C++"],
@@ -220,4 +222,8 @@ const poll = {
     console.log(this.answers);
   },
 };
-// poll.registerNewAnswer();
+
+// 2
+document
+  .querySelector(".poll")
+  .addEventListener("click", poll.registerNewAnswer.bind(poll));
