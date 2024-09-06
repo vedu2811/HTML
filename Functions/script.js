@@ -212,7 +212,7 @@ const poll = {
     // 1.1
     const answer = Number(
       prompt(
-        "What is your favorite programming language?\n0: JavaScript\n1: Python\n2: Rust\n3: C++\n(Write option number)"
+        `${this.question}\n${this.options.join("\n")}\n(Write option number)`
       )
     );
     // 1.2
