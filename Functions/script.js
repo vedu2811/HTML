@@ -213,6 +213,11 @@ const poll = {
         "What is your favorite programming language?\n0: JavaScript\n1: Python\n2: Rust\n3: C++\n(Write option number)"
       )
     );
+    // 1.2
+    if (answer >= 0 && answer <= 3) {
+      this.answers[answer]++;
+    }
+    console.log(this.answers);
   },
 };
 // poll.registerNewAnswer();
