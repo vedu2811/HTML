@@ -317,3 +317,5 @@ const boardPassengers = function (n, wait) {
 
   console.log(`Will start boarding in ${wait} seconds`);
 };
+
+boardPassengers(180, 3);
