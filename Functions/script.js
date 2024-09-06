@@ -219,6 +219,7 @@ const poll = {
     if (answer >= 0 && answer <= 3) {
       this.answers[answer]++;
     }
+    this.displayResults();
   },
 
   displayResults() {
@@ -232,7 +233,6 @@ const poll = {
     }
   },
 };
-poll.displayResults();
 
 // 2
 document
