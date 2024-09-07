@@ -91,3 +91,9 @@ arr.splice(-1);
 console.log(arr);
 arr.splice(1, 3);
 console.log(arr);
+
+// REVERSE - Mutates
+arr = ["a", "b", "c", "d", "e"];
+const arr2 = ["j", "i", "h", "g", "f"];
+console.log(arr.reverse());
+console.log(arr);
