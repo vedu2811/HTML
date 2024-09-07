@@ -135,3 +135,4 @@ movements.forEach(function (mov, i, arr) {
     console.log(`Movement ${i + 1}: You withdrew ${Math.abs(mov)}`);
   }
 });
+// For Each does not break out of the array - it completes the whole array anyhow...
