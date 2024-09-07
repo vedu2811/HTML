@@ -129,7 +129,6 @@ movements.forEach(function (mov, i, arr) {
   }
 });
 // For Each does not break out of the array - it completes the whole array anyhow...
-*/
 
 // forEach on MAPS
 const currencies = new Map([
@@ -148,3 +147,4 @@ console.log(currenciesUnique);
 currenciesUnique.forEach(function (value, _, set) {
   console.log(_, value);
 });
+*/
