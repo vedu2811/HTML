@@ -65,12 +65,6 @@ const inputClosePin = document.querySelector(".form__input--pin");
 /////////////////////////////////////////////////
 // LECTURES
 
-const currencies = new Map([
-  ["USD", "United States dollar"],
-  ["EUR", "Euro"],
-  ["GBP", "Pound sterling"],
-]);
-
 /////////////////////////////////////////////////
 /*
 let arr = ["a", "b", "c", "d", "e"];
@@ -115,7 +109,6 @@ console.log(arr.slice(-1)[0]);
 console.log(arr.at(-1));
 
 console.log("jonas".at(-1));
-*/
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
@@ -136,3 +129,15 @@ movements.forEach(function (mov, i, arr) {
   }
 });
 // For Each does not break out of the array - it completes the whole array anyhow...
+*/
+
+// forEach on MAPS
+const currencies = new Map([
+  ["USD", "United States dollar"],
+  ["EUR", "Euro"],
+  ["GBP", "Pound sterling"],
+]);
+
+currencies.forEach(function (value, key, map) {
+  console.log(key, value);
+});
