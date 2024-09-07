@@ -102,3 +102,6 @@ console.log(arr);
 const letters = arr.concat(arr2);
 console.log(letters);
 console.log([...arr, ...arr2]);
+
+// JOIN
+console.log(letters.join(" - "));
