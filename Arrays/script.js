@@ -84,3 +84,10 @@ console.log(arr.slice(-2));
 console.log(arr.slice(-1));
 console.log(arr.slice(1, -2));
 console.log(arr.slice());
+
+// SPLICE - Mutates(changes) original array
+// console.log(arr.splice(2));
+arr.splice(-1);
+console.log(arr);
+arr.splice(1, 3);
+console.log(arr);
