@@ -263,7 +263,6 @@ for (const mov of movements) {
   }
 }
 console.log(withdrawalFor);
-*/
 
 // The REDUCE Method
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
@@ -283,3 +282,4 @@ for (const mov of movements) {
   balance2 += mov;
 }
 console.log(balance2);
+*/
