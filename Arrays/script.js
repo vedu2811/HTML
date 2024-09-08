@@ -275,6 +275,9 @@ const balance = movements.reduce(function (acc, cur, i, arr) {
 }, 0);
 console.log(balance);
 
+const balanceArrow = movements.reduce((acc, cur) => acc + cur, 0);
+console.log(balanceArrow);
+
 let balance2 = 0;
 for (const mov of movements) {
   balance2 += mov;
