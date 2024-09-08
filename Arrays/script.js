@@ -245,3 +245,11 @@ const deposits = movements.filter(function (mov) {
   return mov > 0;
 });
 console.log(deposits);
+
+const depositFor = [];
+for (const mov of movements) {
+  if (mov > 0) {
+    depositFor.push(mov);
+  }
+}
+console.log(depositFor);
