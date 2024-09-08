@@ -301,13 +301,14 @@ console.log(max);
 // Coding Challenge 2
 
 // 1.
-const ages = [5, 2, 4, 1, 15, 8, 3];
+// const ages = [5, 2, 4, 1, 15, 8, 3];
+const ages = [16, 6, 10, 5, 6, 1, 4];
 const calcAverageHumanAge = function (ages) {
   const dogHumanAge = ages.map((age) => (age <= 2 ? 2 * age : 16 + 4 * age));
-  // console.log(dogHumanAge);
+  console.log(dogHumanAge);
 
   const dogsFiltered = dogHumanAge.filter((age) => age >= 18);
-  // console.log(dogsFiltered);
+  console.log(dogsFiltered);
 
   const avgAge =
     dogsFiltered.reduce((acc, cur) => acc + cur, 0) / dogsFiltered.length;
