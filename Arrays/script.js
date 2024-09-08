@@ -191,7 +191,6 @@ console.log("---DataSet 1---");
 checkDogs(dogs1, dogs2);
 console.log("---DataSet 2---");
 checkDogs(dogs3, dogs4);
-*/
 
 // MAP Method
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
@@ -225,3 +224,4 @@ const movementsDescriptive = movements.map(function (mov, i, arr) {
   // }
 });
 console.log(movementsDescriptive);
+*/
