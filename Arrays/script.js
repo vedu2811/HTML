@@ -205,6 +205,7 @@ const movementsUSD = movements.map(function (mov) {
 const movementsUSDArrow = movements.map((mov) => mov * euroToUsd);
 console.log(movements);
 console.log(movementsUSD);
+console.log(movementsUSDArrow);
 
 const movementsUSDfor = [];
 for (const mov of movements) {
