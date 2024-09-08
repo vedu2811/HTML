@@ -236,7 +236,6 @@ const movementsDescriptive = movements.map(function (mov, i, arr) {
   // }
 });
 console.log(movementsDescriptive);
-*/
 
 // FILTER METHOD
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
@@ -264,3 +263,6 @@ for (const mov of movements) {
   }
 }
 console.log(withdrawalFor);
+*/
+
+// The REDUCE Method
