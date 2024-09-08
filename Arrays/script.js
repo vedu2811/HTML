@@ -304,19 +304,9 @@ console.log(max);
 const ages = [5, 2, 4, 1, 15, 8, 3];
 const calcAverageHumanAge = function (ages) {
   const dogHumanAge = ages.map((age) => (age <= 2 ? 2 * age : 16 + 4 * age));
-  console.log(dogHumanAge);
+  // console.log(dogHumanAge);
+
+  const dogsFiltered = dogHumanAge.filter((age) => age >= 18);
+  console.log(dogsFiltered);
 };
 calcAverageHumanAge(ages);
-
-// // 2.
-// const dogsFiltered = dogHumanAge.filter(function (age) {
-//   return age >= 18;
-// });
-// console.log(dogsFiltered);
-
-// // 3.
-// const totalAge = dogsFiltered.reduce(function (acc, cur) {
-//   return acc + cur;
-// }, 0);
-// const avgAge = totalAge / dogsFiltered.length;
-// console.log(avgAge);
