@@ -319,7 +319,7 @@ console.log(dogsFiltered);
 
 // 3.
 const totalAge = dogsFiltered.reduce(function (acc, cur) {
-  return (acc += cur);
-});
+  return acc + cur;
+}, 0);
 const avgAge = totalAge / dogsFiltered.length;
 console.log(avgAge);
