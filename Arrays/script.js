@@ -81,6 +81,14 @@ const displayMovements = function (movements) {
 };
 displayMovements(account1.movements);
 
+const user = "Vedant Jalan";
+const userName = user
+  .toLowerCase()
+  .split(" ")
+  .map((name) => name[0])
+  .join("");
+console.log(userName);
+
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
