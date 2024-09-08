@@ -302,24 +302,27 @@ console.log(max);
 
 // 1.
 const ages = [5, 2, 4, 1, 15, 8, 3];
-const dogHumanAge = ages.map(function (age) {
-  if (age <= 2) {
-    return 2 * age;
-  } else {
-    return 16 + 4 * age;
-  }
-});
-console.log(dogHumanAge);
+const calcAverageHumanAge = function (ages) {
+  const dogHumanAge = ages.map(function (age) {
+    if (age <= 2) {
+      return 2 * age;
+    } else {
+      return 16 + 4 * age;
+    }
+  });
+  console.log(dogHumanAge);
+};
+calcAverageHumanAge(ages);
 
-// 2.
-const dogsFiltered = dogHumanAge.filter(function (age) {
-  return age >= 18;
-});
-console.log(dogsFiltered);
+// // 2.
+// const dogsFiltered = dogHumanAge.filter(function (age) {
+//   return age >= 18;
+// });
+// console.log(dogsFiltered);
 
-// 3.
-const totalAge = dogsFiltered.reduce(function (acc, cur) {
-  return acc + cur;
-}, 0);
-const avgAge = totalAge / dogsFiltered.length;
-console.log(avgAge);
+// // 3.
+// const totalAge = dogsFiltered.reduce(function (acc, cur) {
+//   return acc + cur;
+// }, 0);
+// const avgAge = totalAge / dogsFiltered.length;
+// console.log(avgAge);
