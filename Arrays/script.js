@@ -303,13 +303,7 @@ console.log(max);
 // 1.
 const ages = [5, 2, 4, 1, 15, 8, 3];
 const calcAverageHumanAge = function (ages) {
-  const dogHumanAge = ages.map(function (age) {
-    if (age <= 2) {
-      return 2 * age;
-    } else {
-      return 16 + 4 * age;
-    }
-  });
+  const dogHumanAge = ages.map((age) => (age <= 2 ? 2 * age : 16 + 4 * age));
   console.log(dogHumanAge);
 };
 calcAverageHumanAge(ages);
