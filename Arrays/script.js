@@ -177,7 +177,7 @@ const checkDogs = function (dogsJulia, dogsKate) {
   const fullArr = julia.concat(dogsKate);
 
   fullArr.forEach(function (dog, i, arr) {
-    if (dog >= 5) {
+    if (dog >= 3) {
       console.log(`Dog number ${i + 1} is an adult, and is ${dog} years old`);
     } else {
       console.log(`Dog number ${i + 1} is still a puppy 🐶`);
