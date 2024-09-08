@@ -186,4 +186,9 @@ const checkDogs = function (dogsJulia, dogsKate) {
 };
 const dogs1 = [3, 5, 2, 12, 7];
 const dogs2 = [4, 1, 15, 8, 3];
+const dogs3 = [9, 16, 6, 8, 3];
+const dogs4 = [10, 5, 6, 1, 4];
+console.log("---DataSet 1---");
 checkDogs(dogs1, dogs2);
+console.log("---DataSet 2---");
+checkDogs(dogs3, dogs4);
