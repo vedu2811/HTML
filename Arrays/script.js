@@ -296,3 +296,17 @@ const max = movements.reduce((acc, cur) => {
 }, movements[0]);
 console.log(max);
 */
+
+///////////////////////////////////////////
+// Coding Challenge 2
+
+// 1.
+const ages = [5, 2, 4, 1, 15, 8, 3];
+const calcAverageHumanAge = ages.map(function (age) {
+  if (age <= 2) {
+    return 2 * age;
+  } else {
+    return 16 + 4 * age;
+  }
+});
+console.log(calcAverageHumanAge);
