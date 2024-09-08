@@ -254,15 +254,15 @@ for (const mov of movements) {
 }
 console.log(depositFor);
 
-// const withdrawals = movements.filter(function (mov) {
-//   return mov < 0;
-// });
-// console.log(withdrawals);
+const withdrawals = movements.filter(function (mov) {
+  return mov < 0;
+});
+console.log(withdrawals);
 
 const withdrawalFor = [];
 for (const mov of movements) {
   if (mov < 0) {
-    withdrawalFor.push(Math.abs(mov));
+    withdrawalFor.push(mov);
   }
 }
 console.log(withdrawalFor);
