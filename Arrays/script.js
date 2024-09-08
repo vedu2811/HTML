@@ -167,7 +167,6 @@ console.log(currenciesUnique);
 currenciesUnique.forEach(function (value, _, set) {
   console.log(_, value);
 });
-*/
 
 //////////////////////////////////////////////
 // Coding Challenge #1
@@ -192,3 +191,4 @@ console.log("---DataSet 1---");
 checkDogs(dogs1, dogs2);
 console.log("---DataSet 2---");
 checkDogs(dogs3, dogs4);
+*/
