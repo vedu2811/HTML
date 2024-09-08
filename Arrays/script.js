@@ -310,3 +310,9 @@ const dogHumanAge = ages.map(function (age) {
   }
 });
 console.log(dogHumanAge);
+
+// 2.
+const dogsFiltered = dogHumanAge.filter(function (age) {
+  return age >= 18;
+});
+console.log(dogsFiltered);
