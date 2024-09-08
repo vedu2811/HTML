@@ -316,3 +316,10 @@ const dogsFiltered = dogHumanAge.filter(function (age) {
   return age >= 18;
 });
 console.log(dogsFiltered);
+
+// 3.
+const totalAge = dogsFiltered.reduce(function (acc, cur) {
+  return (acc += cur);
+});
+const avgAge = totalAge / dogsFiltered.length;
+console.log(avgAge);
