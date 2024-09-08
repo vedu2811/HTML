@@ -168,3 +168,13 @@ currenciesUnique.forEach(function (value, _, set) {
   console.log(_, value);
 });
 */
+
+//////////////////////////////////////////////
+// Coding Challenge #1
+
+const checkDogs = function (dogsJulia, dogsKate) {
+  const julia = dogsJulia.slice(1, -2);
+};
+const dogs1 = [3, 5, 2, 12, 7];
+const dogs2 = [4, 1, 15, 8, 3];
+checkDogs(dogs1, dogs2);
