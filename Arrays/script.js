@@ -212,3 +212,12 @@ for (const mov of movements) {
   movementsUSDfor.push(mov * euroToUsd);
 }
 console.log(movementsUSDfor);
+
+const movementsDescriptive = movements.map(function (mov, i, arr) {
+  if (mov > 0) {
+    return `Movement ${i + 1}: You deposited ${mov}`;
+  } else {
+    return `Movement ${i + 1}: You withdrew ${Math.abs(mov)}`;
+  }
+});
+console.log(movementsDescriptive);
