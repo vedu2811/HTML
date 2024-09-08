@@ -192,3 +192,14 @@ checkDogs(dogs1, dogs2);
 console.log("---DataSet 2---");
 checkDogs(dogs3, dogs4);
 */
+
+// MAP Method
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+const euroToUsd = 1.1;
+
+const movementsUSD = movements.map(function (mov) {
+  return mov * euroToUsd;
+});
+console.log(movements);
+console.log(movementsUSD);
