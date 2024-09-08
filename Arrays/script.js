@@ -175,6 +175,14 @@ currenciesUnique.forEach(function (value, _, set) {
 const checkDogs = function (dogsJulia, dogsKate) {
   const julia = dogsJulia.slice(1, -2);
   const fullArr = julia.concat(dogsKate);
+
+  fullArr.forEach(function (dog, i, arr) {
+    if (dog >= 5) {
+      console.log(`Dog number ${i + 1} is an adult, and is ${dog} years old`);
+    } else {
+      console.log(`Dog number ${i + 1} is still a puppy 🐶`);
+    }
+  });
 };
 const dogs1 = [3, 5, 2, 12, 7];
 const dogs2 = [4, 1, 15, 8, 3];
