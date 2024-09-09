@@ -533,7 +533,6 @@ const overallBalance2 = accounts
   .flatMap((acc) => acc.movements)
   .reduce((acc, mov) => acc + mov, 0);
 console.log(overallBalance2);
-*/
 
 // Strings
 const owners = ["Vedant", "Abir", "Surya", "Uday"];
@@ -562,3 +561,4 @@ console.log(movements);
 // });
 movements.sort((a, b) => b - a);
 console.log(movements);
+*/
