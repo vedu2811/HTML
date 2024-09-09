@@ -313,8 +313,8 @@ const calcAverageHumanAge = function (ages) {
   console.log(avgAge);
 };
 calcAverageHumanAge(ages);
-*/
 
+// CHAINING METHODS
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 const euroToUsd = 1.1;
@@ -325,3 +325,4 @@ const totalDepositsUSD = movements
   .map((mov, i, arr) => mov * euroToUsd)
   .reduce((acc, mov) => acc + mov, 0);
 console.log(totalDepositsUSD);
+*/
