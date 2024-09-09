@@ -507,9 +507,15 @@ console.log(arr.flat());
 const arrDeep = [[[1, 2], 3], [4, [5, 6]], 7, 8];
 console.log(arrDeep.flat(2));
 
-const accountMovement = accounts.map((acc) => acc.movements);
-console.log(accountMovement);
-const allMovements = accountMovement.flat();
-console.log(allMovements);
-const sum = allMovements.reduce((acc, mov) => acc + mov, 0);
-console.log(sum);
+// const accountMovement = accounts.map((acc) => acc.movements);
+// console.log(accountMovement);
+// const allMovements = accountMovement.flat();
+// console.log(allMovements);
+// const sum = allMovements.reduce((acc, mov) => acc + mov, 0);
+// console.log(sum);
+
+const overallBalance = accounts
+  .map((acc) => acc.movements)
+  .flat()
+  .reduce((acc, mov) => acc + mov, 0);
+console.log(overallBalance);
