@@ -534,4 +534,13 @@ console.log(owners);
 // Numbers
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 console.log(movements);
-console.log(movements.sort());
+
+// return < 0, A, B (Keep Order)
+// return >0, B, A (Switch Order)
+
+// Ascending
+movements.sort((a, b) => {
+  if (a > b) return 1;
+  if (a < b) return -1;
+});
+console.log(movements);
