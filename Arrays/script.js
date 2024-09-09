@@ -345,7 +345,6 @@ const totalDepositsUSD = movements
   .map((mov, i, arr) => mov * euroToUsd)
   .reduce((acc, mov) => acc + mov, 0);
 console.log(totalDepositsUSD);
-*/
 
 //////////////////////////////////////////////////
 // Coding Challenge 3
@@ -359,3 +358,4 @@ const calcAverageHumanAge = function (ages) {
 };
 const ages = [5, 2, 4, 1, 15, 8, 3];
 calcAverageHumanAge(ages);
+*/
