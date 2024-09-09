@@ -519,3 +519,9 @@ const overallBalance = accounts
   .flat()
   .reduce((acc, mov) => acc + mov, 0);
 console.log(overallBalance);
+
+// FLATMAP Method - ALWAYS ONE LEVEL DEEP
+const overallBalance2 = accounts
+  .flatMap((acc) => acc.movements)
+  .reduce((acc, mov) => acc + mov, 0);
+console.log(overallBalance2);
