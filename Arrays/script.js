@@ -466,5 +466,5 @@ console.log(movements);
 console.log(movements.includes(-130));
 
 // Condition
-const anyDeposits = movements.some((mov) => mov > 1500);
+const anyDeposits = movements.some((mov) => mov > 0);
 console.log(anyDeposits);
