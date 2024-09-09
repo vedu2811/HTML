@@ -185,9 +185,19 @@ btnTransfer.addEventListener("click", function (e) {
   }
 });
 
-// Request Loan
+// Request Loan - grants loan if at least one deposit is 10% of the loan
 btnLoan.addEventListener("click", function (e) {
   e.preventDefault();
+
+  const loanRequest = Number(inputLoanAmount.value);
+
+  if (
+    loanRequest > 0 &&
+    currentAccount.movements.some((mov) => mov >= loanRequest * 0.1)
+  ) {
+    // Add Movement
+    currentAccount.movements.push(loanRequest);
+  }
 });
 
 // Close Account
