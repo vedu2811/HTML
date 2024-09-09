@@ -197,6 +197,9 @@ btnClose.addEventListener("click", function (e) {
       (acc) => acc.userName === currentAccount.userName
     );
     console.log(index);
+
+    // Delete Account
+    accounts.splice(index, 1);
   }
 });
 
