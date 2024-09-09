@@ -119,6 +119,13 @@ const createUsernames = function (accs) {
 createUsernames(accounts);
 console.log(accounts);
 
+// Event Handlers
+btnLogin.addEventListener("click", function (e) {
+  // Prevent Form from Submitting
+  e.preventDefault();
+  console.log("LOGIN");
+});
+
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
