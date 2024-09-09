@@ -87,20 +87,20 @@ const calcDisplayBalance = function (movements) {
 };
 // calcDisplayBalance(account1.movements);
 
-const calcDisplaySummary = function (movements) {
-  const totalDep = movements
+const calcDisplaySummary = function (account) {
+  const totalDep = account.movements
     .filter((mov) => mov > 0)
     .reduce((acc, cur) => acc + cur, 0);
   labelSumIn.textContent = `${totalDep}€`;
 
-  const totalWit = movements
+  const totalWit = account.movements
     .filter((mov) => mov < 0)
     .reduce((acc, cur) => acc + cur, 0);
   labelSumOut.textContent = `${Math.abs(totalWit)}€`;
 
-  const totalInterest = movements
+  const totalInterest = account.movements
     .filter((mov) => mov > 0)
-    .map((mov) => (mov * 1.2) / 100)
+    .map((mov) => (mov * account.interestRate) / 100)
     .filter((mov) => mov > 1)
     .reduce((acc, mov) => acc + mov, 0);
   labelSumInterest.textContent = `${totalInterest}€`;
@@ -149,7 +149,7 @@ btnLogin.addEventListener("click", function (e) {
     calcDisplayBalance(currentAccount.movements);
 
     // Display summary
-    calcDisplaySummary(currentAccount.movements);
+    calcDisplaySummary(currentAccount);
   }
 });
 
