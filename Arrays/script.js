@@ -358,7 +358,6 @@ const calcAverageHumanAge = function (ages) {
 };
 const ages = [5, 2, 4, 1, 15, 8, 3];
 calcAverageHumanAge(ages);
-*/
 
 // FIND Method
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
@@ -370,3 +369,4 @@ console.log(accounts);
 
 const account = accounts.find((acc) => (acc.owner = "Vedant Jalan"));
 console.log(account);
+*/
