@@ -92,6 +92,11 @@ const calcDisplaySummary = function (movements) {
     .filter((mov) => mov > 0)
     .reduce((acc, cur) => acc + cur, 0);
   labelSumIn.textContent = `${totalDep}€`;
+
+  const totalWit = movements
+    .filter((mov) => mov < 0)
+    .reduce((acc, cur) => acc + cur, 0);
+  labelSumOut.textContent = `${totalWit}€`;
 };
 calcDisplaySummary(account1.movements);
 
