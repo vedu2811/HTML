@@ -493,3 +493,9 @@ const allDeposits = movements.every((mov) => mov > 0);
 console.log(allDeposits);
 const allDeposits2 = account4.movements.every((mov) => mov > 0);
 console.log(allDeposits2);
+
+// Separate Callback
+const deposit = (mov) => mov > 0;
+console.log(movements.some(deposit));
+console.log(movements.every(deposit));
+console.log(movements.filter(deposit));
