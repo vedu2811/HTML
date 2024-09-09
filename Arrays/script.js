@@ -200,6 +200,9 @@ btnClose.addEventListener("click", function (e) {
 
     // Delete Account
     accounts.splice(index, 1);
+
+    // Hide UI
+    containerApp.style.opacity = 0;
   }
 });
 
