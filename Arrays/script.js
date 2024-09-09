@@ -120,10 +120,16 @@ createUsernames(accounts);
 console.log(accounts);
 
 // Event Handlers
+let currentAccount;
+
 btnLogin.addEventListener("click", function (e) {
   // Prevent Form from Submitting
   e.preventDefault();
-  console.log("LOGIN");
+
+  currentAccount = accounts.find(
+    (acc) => acc.userName === inputLoginUsername.value
+  );
+  console.log(currentAccount);
 });
 
 /////////////////////////////////////////////////
