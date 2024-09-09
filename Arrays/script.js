@@ -196,7 +196,7 @@ btnClose.addEventListener("click", function (e) {
     const index = accounts.findIndex(
       (acc) => acc.userName === currentAccount.userName
     );
-    console.log(index);
+    // console.log(index);
 
     // Delete Account
     accounts.splice(index, 1);
@@ -204,6 +204,7 @@ btnClose.addEventListener("click", function (e) {
     // Hide UI
     containerApp.style.opacity = 0;
   }
+  inputClosePin.value = inputCloseUsername.value = "";
 });
 
 /////////////////////////////////////////////////
