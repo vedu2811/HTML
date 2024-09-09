@@ -500,6 +500,9 @@ console.log(movements.every(deposit));
 console.log(movements.filter(deposit));
 */
 
-// FLAT Method
+// FLAT Method - Default Depth:1
 const arr = [[1, 2, 3], [3, 4, 5, 6], 7, 6, 8, 9];
 console.log(arr.flat());
+
+const arrDeep = [[[1, 2], 3], [4, [5, 6]], 7, 8];
+console.log(arrDeep.flat(2));
