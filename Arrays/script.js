@@ -201,6 +201,7 @@ btnLoan.addEventListener("click", function (e) {
     // Update the UI
     updateUI(currentAccount);
   }
+  inputLoanAmount.value = "";
 });
 
 // Close Account
