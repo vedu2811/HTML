@@ -346,3 +346,16 @@ const totalDepositsUSD = movements
   .reduce((acc, mov) => acc + mov, 0);
 console.log(totalDepositsUSD);
 */
+
+//////////////////////////////////////////////////
+// Coding Challenge 3
+
+const calcAverageHumanAge = function (ages) {
+  const avgAge = ages
+    .map((age) => (age <= 2 ? age * 2 : age * 4 + 16))
+    .filter((mov) => mov >= 18)
+    .reduce((acc, mov, i, arr) => acc + mov / arr.length, ages[0]);
+  console.log(avgAge);
+};
+const ages = [5, 2, 4, 1, 15, 8, 3];
+calcAverageHumanAge(ages);
