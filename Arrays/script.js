@@ -197,6 +197,9 @@ btnLoan.addEventListener("click", function (e) {
   ) {
     // Add Movement
     currentAccount.movements.push(loanRequest);
+
+    // Update the UI
+    updateUI(currentAccount);
   }
 });
 
