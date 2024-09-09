@@ -186,6 +186,9 @@ btnTransfer.addEventListener("click", function (e) {
 });
 
 // Close Account
+btnClose.addEventListener("click", function (e) {
+  e.preventDefault();
+});
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
