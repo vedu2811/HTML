@@ -131,6 +131,8 @@ const updateUI = function (acc) {
 };
 
 // Event Handlers
+
+// Login
 let currentAccount;
 
 btnLogin.addEventListener("click", function (e) {
@@ -182,6 +184,8 @@ btnTransfer.addEventListener("click", function (e) {
     updateUI(currentAccount);
   }
 });
+
+// Close Account
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
