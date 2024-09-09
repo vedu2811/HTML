@@ -464,3 +464,7 @@ console.log(movements);
 
 // Equality Check
 console.log(movements.includes(-130));
+
+// Condition
+const anyDeposits = movements.some((mov) => mov > 1500);
+console.log(anyDeposits);
