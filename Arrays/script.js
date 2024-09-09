@@ -96,7 +96,7 @@ const calcDisplaySummary = function (movements) {
   const totalWit = movements
     .filter((mov) => mov < 0)
     .reduce((acc, cur) => acc + cur, 0);
-  labelSumOut.textContent = `${totalWit}€`;
+  labelSumOut.textContent = `${Math.abs(totalWit)}€`;
 };
 calcDisplaySummary(account1.movements);
 
