@@ -499,3 +499,7 @@ console.log(movements.some(deposit));
 console.log(movements.every(deposit));
 console.log(movements.filter(deposit));
 */
+
+// FLAT Method
+const arr = [[1, 2, 3], [3, 4, 5, 6], 7, 6, 8, 9];
+console.log(arr.flat());
