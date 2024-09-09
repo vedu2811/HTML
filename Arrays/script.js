@@ -484,6 +484,12 @@ console.log(movements);
 // Equality Check
 console.log(movements.includes(-130));
 
-// Condition
+// SOME: Condition
 const anyDeposits = movements.some((mov) => mov > 0);
 console.log(anyDeposits);
+
+// EVERY: Condition
+const allDeposits = movements.every((mov) => mov > 0);
+console.log(allDeposits);
+const allDeposits2 = account4.movements.every((mov) => mov > 0);
+console.log(allDeposits2);
