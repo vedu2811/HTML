@@ -137,9 +137,15 @@ btnLogin.addEventListener("click", function (e) {
       currentAccount.owner.split(" ")[0]
     }`;
     containerApp.style.opacity = 100;
+
     // Display movements
+    displayMovements(currentAccount.movements);
+
     // Display balance
+    calcDisplayBalance(currentAccount.movements);
+
     // Display summary
+    calcDisplaySummary(currentAccount.movements);
   }
 });
 
