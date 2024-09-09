@@ -185,6 +185,11 @@ btnTransfer.addEventListener("click", function (e) {
   }
 });
 
+// Request Loan
+btnLoan.addEventListener("click", function (e) {
+  e.preventDefault();
+});
+
 // Close Account
 btnClose.addEventListener("click", function (e) {
   e.preventDefault();
