@@ -628,3 +628,13 @@ const { deposits, withdrawals } = accounts
     { deposits: 0, withdrawals: 0 }
   );
 console.log(deposits, withdrawals);
+
+// 4.
+// TITLE Case:
+// this is a nice title --> This Is a Nice Title
+const convertTitleCase = function (title) {
+  const exceptions = ["a", "an", "the", "but", "or", "on", "in", "with"];
+};
+console.log(convertTitleCase("this is a nice title"));
+console.log(convertTitleCase("this is a LONG title but not too long"));
+console.log(convertTitleCase("and here is anotheer title with an EXAMPLE"));
