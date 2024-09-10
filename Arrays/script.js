@@ -633,7 +633,7 @@ console.log(deposits, withdrawals);
 // TITLE Case:
 // this is a nice title --> This Is a Nice Title
 const convertTitleCase = function (title) {
-  const exceptions = ["a", "an", "the", "but", "or", "on", "in", "with"];
+  const exceptions = ["a", "an", "and", "the", "but", "or", "on", "in", "with"];
 
   const titleCase = title
     .toLowerCase()
