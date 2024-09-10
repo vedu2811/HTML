@@ -573,3 +573,6 @@ console.log(x);
 x.fill(1, 3, 5);
 // x.fill(1);
 console.log(x);
+
+arr.fill(23, 2, 6);
+console.log(arr);
