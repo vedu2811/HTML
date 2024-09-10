@@ -646,7 +646,6 @@ const convertTitleCase = function (title) {
 console.log(convertTitleCase("this is a nice title"));
 console.log(convertTitleCase("this is a LONG title but not too long"));
 console.log(convertTitleCase("and here is another title with an EXAMPLE"));
-*/
 
 ////////////////////////////////////////////////
 // Coding Challenge - 4
@@ -716,3 +715,4 @@ const dogsSorted = dogs
   .sort((a, b) => a.recommendedFood - b.recommendedFood);
 
 console.log(dogsSorted);
+*/
