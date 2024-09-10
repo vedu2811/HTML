@@ -709,3 +709,10 @@ const okayDogs = dogs.filter(
     dog.curFood < dog.recommendedFood * 1.1
 );
 console.log(okayDogs);
+
+// 8.
+const dogsSorted = dogs
+  .slice()
+  .sort((a, b) => a.recommendedFood - b.recommendedFood);
+
+console.log(dogsSorted);
