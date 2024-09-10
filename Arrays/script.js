@@ -583,3 +583,13 @@ console.log(y);
 
 const z = Array.from({ length: 7 }, (_, i) => i + 1);
 console.log(z);
+
+labelBalance.addEventListener("click", function (e) {
+  e.preventDefault();
+  labelBalance.style.cursor = "pointer";
+
+  const movementsUI = Array.from(
+    document.querySelectorAll(".movements__value")
+  );
+  console.log(movementsUI);
+});
