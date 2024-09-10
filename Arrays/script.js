@@ -593,3 +593,14 @@ labelBalance.addEventListener("click", function (e) {
   console.log(movementsUI.map((el) => el.textContent.replace("€", "")));
 });
 */
+
+//////////////////////////////////////////////////////
+// Array Methods Practice
+//////////////////////////////////////////////////////
+
+// 1.
+const bankDepositSum = accounts
+  .flatMap((acc) => acc.movements)
+  .filter((mov) => mov > 0)
+  .reduce((sum, cur) => sum + cur);
+console.log(bankDepositSum);
