@@ -661,7 +661,7 @@ const dogs = [
 ];
 
 // 1.
-dogs.forEach(function (dog) {
-  dog.recommendedFood = Math.trunc(dog.weight ** 0.75 * 28);
-});
+dogs.forEach(
+  (dog) => (dog.recommendedFood = Math.trunc(dog.weight ** 0.75 * 28))
+);
 console.log(dogs);
