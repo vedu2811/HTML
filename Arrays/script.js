@@ -635,14 +635,14 @@ console.log(deposits, withdrawals);
 const convertTitleCase = function (title) {
   const exceptions = ["a", "an", "and", "the", "but", "or", "on", "in", "with"];
 
+  const capitalize = (str) => str[0].toUpperCase() + str.slice(1);
+
   const titleCase = title
     .toLowerCase()
     .split(" ")
-    .map((word) =>
-      exceptions.includes(word) ? word : word[0].toUpperCase() + word.slice(1)
-    )
+    .map((word) => (exceptions.includes(word) ? word : capitalize(word)))
     .join(" ");
-  return titleCase;
+  return capitalize(titleCase);
 };
 console.log(convertTitleCase("this is a nice title"));
 console.log(convertTitleCase("this is a LONG title but not too long"));
