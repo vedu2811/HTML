@@ -634,7 +634,15 @@ console.log(deposits, withdrawals);
 // this is a nice title --> This Is a Nice Title
 const convertTitleCase = function (title) {
   const exceptions = ["a", "an", "the", "but", "or", "on", "in", "with"];
+
+  const titleCase = title
+    .toLowerCase()
+    .split(" ")
+    .map((word) =>
+      exceptions.includes(word) ? word : word[0].toUpperCase() + word.slice(1)
+    );
+  return titleCase;
 };
 console.log(convertTitleCase("this is a nice title"));
 console.log(convertTitleCase("this is a LONG title but not too long"));
-console.log(convertTitleCase("and here is anotheer title with an EXAMPLE"));
+console.log(convertTitleCase("and here is another title with an EXAMPLE"));
