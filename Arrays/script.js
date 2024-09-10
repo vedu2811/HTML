@@ -674,3 +674,9 @@ console.log(
   }`
 );
 console.log(sarahDog);
+
+// 3.
+const ownersEatTooMuch = dogs
+  .filter((dog) => dog.curFood > dog.recommendedFood)
+  .flatMap((owner) => owner.owners);
+console.log(ownersEatTooMuch);
