@@ -617,7 +617,7 @@ const numDepositsK = accounts
 console.log(numDepositsK);
 
 // 3.
-const sums = accounts
+const { deposits, withdrawals } = accounts
   .flatMap((acc) => acc.movements)
   .reduce(
     (sums, cur) => {
@@ -627,4 +627,4 @@ const sums = accounts
     },
     { deposits: 0, withdrawals: 0 }
   );
-console.log(sums);
+console.log(deposits, withdrawals);
