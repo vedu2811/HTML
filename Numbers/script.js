@@ -332,3 +332,7 @@ console.log(+(2.345).toFixed(2));
 */
 
 // Remainder Operator
+console.log(5 % 2);
+console.log(5 / 2);
+
+console.log(8 % 3);
