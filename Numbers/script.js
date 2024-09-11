@@ -372,3 +372,6 @@ console.log(Number("230000"));
 console.log(Number("230_000"));
 console.log(parseInt("230_000"));
 */
+
+console.log(2 ** 53 - 1);
+console.log(Number.MAX_SAFE_INTEGER);
