@@ -329,7 +329,6 @@ console.log(Math.floor(-23.3));
 console.log((2.7).toFixed(0));
 console.log((2.345).toFixed(2));
 console.log(+(2.345).toFixed(2));
-*/
 
 // Remainder Operator
 console.log(5 % 2);
@@ -352,3 +351,4 @@ labelBalance.addEventListener("click", function () {
     if (i % 3 === 0) row.style.backgroundColor = "blue";
   });
 });
+*/
