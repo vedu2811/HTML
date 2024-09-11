@@ -296,3 +296,7 @@ console.log(Number.isInteger(23 / 0));
 console.log(Math.sqrt(25));
 console.log(25 ** 0.5);
 console.log(8 ** (1 / 3));
+
+console.log(Math.max(3, 4, 5, 6, 7, 8));
+console.log(Math.max(3, 12, "28", 6, 7, 8));
+console.log(Math.max(3, 4, "28px", 6, 7, 8));
