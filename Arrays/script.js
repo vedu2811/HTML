@@ -20,10 +20,10 @@ const account2 = {
 };
 
 const account3 = {
-  owner: "Surya Pratap Singh",
+  owner: "Siddhant Rana",
   movements: [200, -200, 340, -300, -20, 50, 400, -460],
   interestRate: 0.7,
-  pin: 7266,
+  pin: 7585,
 };
 
 const account4 = {
