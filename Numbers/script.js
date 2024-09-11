@@ -280,3 +280,9 @@ console.log(Number.isNaN(20));
 console.log(Number.isNaN("2"));
 console.log(Number.isNaN(+"20X"));
 console.log(Number.isNaN(23 / 0));
+
+// BEST WAY TO CHECK if value is a number.
+console.log(Number.isFinite(20));
+console.log(Number.isFinite("20"));
+console.log(Number.isFinite(+"20X"));
+console.log(Number.isFinite(23 / 0));
