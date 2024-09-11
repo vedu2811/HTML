@@ -375,3 +375,9 @@ console.log(parseInt("230_000"));
 
 console.log(2 ** 53 - 1);
 console.log(Number.MAX_SAFE_INTEGER);
+
+// Not all are accurate
+console.log(2 ** 53 + 1);
+console.log(2 ** 53 + 2);
+console.log(2 ** 53 + 3);
+console.log(2 ** 53 + 4);
