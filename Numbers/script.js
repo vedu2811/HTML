@@ -388,3 +388,8 @@ console.log(BigInt(374264239743));
 // Operations
 console.log(10000n + 10000n);
 console.log(25345347234896387739536536n * 36552394613971394735n);
+
+const huge = 64932487473458762434n;
+const num = 23;
+// console.log(huge * num);    // Error
+console.log(huge * BigInt(num));
