@@ -292,3 +292,7 @@ console.log(Number.isInteger(23));
 console.log(Number.isInteger(23.0));
 console.log(Number.isInteger(23 / 0));
 */
+
+console.log(Math.sqrt(25));
+console.log(25 ** 0.5);
+console.log(8 ** (1 / 3));
