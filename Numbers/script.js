@@ -403,3 +403,7 @@ console.log(20n == "20");
 console.log(huge + " is really big");
 
 // console.log(Math.sqrt(16n));   // ERROR
+
+// Divisions
+console.log(10n / 3n);
+console.log(10 / 3);
