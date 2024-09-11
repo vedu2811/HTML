@@ -393,3 +393,9 @@ const huge = 64932487473458762434n;
 const num = 23;
 // console.log(huge * num);    // Error
 console.log(huge * BigInt(num));
+
+// EXCEPTIONS
+console.log(20n > 15);
+console.log(20n === 20);
+console.log(typeof 20n);
+console.log(20n == "20");
