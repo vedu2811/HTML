@@ -291,7 +291,6 @@ console.log(Number.isFinite(23 / 0));
 console.log(Number.isInteger(23));
 console.log(Number.isInteger(23.0));
 console.log(Number.isInteger(23 / 0));
-*/
 
 console.log(Math.sqrt(25));
 console.log(25 ** 0.5);
@@ -330,3 +329,6 @@ console.log(Math.floor(-23.3));
 console.log((2.7).toFixed(0));
 console.log((2.345).toFixed(2));
 console.log(+(2.345).toFixed(2));
+*/
+
+// Remainder Operator
