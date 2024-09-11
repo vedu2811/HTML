@@ -351,7 +351,6 @@ labelBalance.addEventListener("click", function () {
     if (i % 3 === 0) row.style.backgroundColor = "blue";
   });
 });
-*/
 
 // Numeric Separators
 // 287,460,000,000
@@ -372,3 +371,4 @@ console.log(PI);
 console.log(Number("230000"));
 console.log(Number("230_000"));
 console.log(parseInt("230_000"));
+*/
