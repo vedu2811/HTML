@@ -254,3 +254,13 @@ btnSort.addEventListener("click", function (e) {
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
+
+console.log(23 === 23.0);
+
+// Base 10 - 0 to 9
+// 1/10 = 0.1, 3/10=0.333333333
+
+// Binary Base 2 - 0,1
+
+console.log(0.1 + 0.2);
+console.log(0.1 + 0.2 === 0.3); //False
