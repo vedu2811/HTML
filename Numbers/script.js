@@ -371,7 +371,6 @@ console.log(PI);
 console.log(Number("230000"));
 console.log(Number("230_000"));
 console.log(parseInt("230_000"));
-*/
 
 console.log(2 ** 53 - 1);
 console.log(Number.MAX_SAFE_INTEGER);
@@ -407,3 +406,4 @@ console.log(huge + " is really big");
 // Divisions
 console.log(10n / 3n);
 console.log(10 / 3);
+*/
