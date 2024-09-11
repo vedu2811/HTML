@@ -300,3 +300,5 @@ console.log(8 ** (1 / 3));
 console.log(Math.max(3, 4, 5, 6, 7, 8));
 console.log(Math.max(3, 12, "28", 6, 7, 8));
 console.log(Math.max(3, 4, "28px", 6, 7, 8));
+
+console.log(Math.min(3, 4, 5, 6, 7, 8));
