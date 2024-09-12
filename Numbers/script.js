@@ -411,3 +411,6 @@ console.log(10 / 3);
 // Create a Date
 const now = new Date();
 console.log(now);
+
+console.log(new Date("Sep 12 2024 15:22:54"));
+console.log(new Date("December 25, 2023"));
