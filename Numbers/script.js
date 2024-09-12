@@ -407,3 +407,7 @@ console.log(huge + " is really big");
 console.log(10n / 3n);
 console.log(10 / 3);
 */
+
+// Create a Date
+const now = new Date();
+console.log(now);
