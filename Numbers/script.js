@@ -414,3 +414,8 @@ console.log(now);
 
 console.log(new Date("Sep 12 2024 15:22:54"));
 console.log(new Date("December 25, 2023"));
+
+console.log(new Date(account1.movementsDates[0]));
+
+console.log(new Date(2037, 10, 19, 15, 23, 5));
+console.log(new Date(2037, 10, 31));
