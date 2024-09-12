@@ -406,7 +406,6 @@ console.log(huge + " is really big");
 // Divisions
 console.log(10n / 3n);
 console.log(10 / 3);
-*/
 
 // Create a Date
 const now = new Date();
@@ -422,3 +421,4 @@ console.log(new Date(2037, 10, 31));
 
 console.log(new Date(0));
 console.log(new Date(3 * 24 * 60 * 60 * 1000));
+*/
