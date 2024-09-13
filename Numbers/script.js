@@ -88,6 +88,10 @@ const formatMovementDate = function (date) {
   const daysPassed = calcDaysPassed(new Date(), date);
   console.log(daysPassed);
 
+  if (daysPassed === 0) return "Today";
+  if (daysPassed === 1) return "Yesterday";
+  if (daysPassed <= 7) return `${daysPassed} days ago`;
+
   const day = `${date.getDate()}`.padStart(2, 0);
   const month = `${date.getMonth() + 1}`.padStart(2, 0);
   const year = date.getFullYear();
