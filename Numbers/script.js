@@ -548,10 +548,10 @@ console.log(
 
 // TIMERS
 
+const ingredients = ["corn", "paneer"];
 setTimeout(
   (ing1, ing2) => console.log(`Here is Your Pizza 🍕 with ${ing1} and ${ing2}`),
   3000,
-  "corn",
-  "paneer"
+  ...ingredients
 );
 console.log("Waiting...");
