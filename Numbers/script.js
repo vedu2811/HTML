@@ -187,12 +187,14 @@ const updateUI = function (acc) {
 
 const logOutTimer = function () {
   // Set time to 5 minutes
-  let time = 100;
+  let time = 120;
 
   // Call timer every second
   setInterval(function () {
+    const min = String(Math.trunc(time / 60)).padStart(2, 0);
+    const sec = String(time % 60).padStart(2, 0);
     // In each call, print remaining time to UI
-    labelTimer.textContent = time;
+    labelTimer.textContent = `${min}:${sec}`;
 
     // Decrease one second
     time--;
