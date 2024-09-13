@@ -545,3 +545,7 @@ console.log(
   new Intl.NumberFormat(navigator.language, options).format(num)
 );
 */
+
+// TIMERS
+
+setTimeout(() => console.log("Here is Your Pizza 🍕"), 3000);
