@@ -83,7 +83,11 @@ const inputClosePin = document.querySelector(".form__input--pin");
 
 const formatMovementDate = function (date) {
   const calcDaysPassed = (date1, date2) =>
-    Math.abs(date2 - date1) / (1000 * 60 * 60 * 24);
+    Math.round(Math.abs(date2 - date1) / (1000 * 60 * 60 * 24));
+
+  const daysPassed = calcDaysPassed(new Date(), date);
+  console.log(daysPassed);
+
   const day = `${date.getDate()}`.padStart(2, 0);
   const month = `${date.getMonth() + 1}`.padStart(2, 0);
   const year = date.getFullYear();
@@ -480,7 +484,6 @@ console.log(Date.now());
 
 future.setFullYear(2040);
 console.log(future);
-*/
 
 // Operations with DATES
 const future = new Date(2037, 10, 19, 15, 23);
@@ -491,3 +494,4 @@ const calcDaysPassed = (date1, date2) =>
 
 const days1 = calcDaysPassed(new Date(2037, 3, 14), new Date(2037, 3, 4));
 console.log(days1);
+*/
