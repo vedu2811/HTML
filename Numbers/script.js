@@ -548,5 +548,10 @@ console.log(
 
 // TIMERS
 
-setTimeout(() => console.log("Here is Your Pizza 🍕"), 3000);
+setTimeout(
+  (ing1, ing2) => console.log(`Here is Your Pizza 🍕 with ${ing1} and ${ing2}`),
+  3000,
+  "corn",
+  "paneer"
+);
 console.log("Waiting...");
