@@ -190,7 +190,7 @@ const logOutTimer = function () {
   let time = 120;
 
   // Call timer every second
-  setInterval(function () {
+  const timer = setInterval(function () {
     const min = String(Math.trunc(time / 60)).padStart(2, 0);
     const sec = String(time % 60).padStart(2, 0);
     // In each call, print remaining time to UI
