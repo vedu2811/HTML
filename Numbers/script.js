@@ -183,7 +183,9 @@ currentAccount = account1;
 updateUI(currentAccount);
 containerApp.style.opacity = 100;
 
-// day/month/year
+// Experimenting with the API
+const now = new Date();
+labelDate.textContent = new Intl.DateTimeFormat("hi-IN").format(now);
 
 btnLogin.addEventListener("click", function (e) {
   // Prevent form from submitting
