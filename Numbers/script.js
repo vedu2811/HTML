@@ -546,7 +546,6 @@ console.log(
   navigator.language,
   new Intl.NumberFormat(navigator.language, options).format(num)
 );
-*/
 
 // TIMERS
 
@@ -565,3 +564,4 @@ setInterval(function () {
   const now = new Date();
   console.log(`${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`);
 }, 1000);
+*/
