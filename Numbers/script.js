@@ -244,6 +244,9 @@ btnLoan.addEventListener("click", function (e) {
     // Add movement
     currentAccount.movements.push(amount);
 
+    // Loan Date
+    currentAccount.movementsDates.push(new Date());
+
     // Update UI
     updateUI(currentAccount);
   }
