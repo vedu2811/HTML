@@ -520,8 +520,9 @@ console.log(days1);
 const num = 2234534.43;
 
 const options = {
-  style: "unit",
+  style: "currency",
   unit: "celsius",
+  currency: "EUR",
 };
 
 console.log("US: ", new Intl.NumberFormat("en-US", options).format(num));
