@@ -210,12 +210,13 @@ btnLogin.addEventListener("click", function (e) {
       year: "numeric",
       weekday: "long",
     };
-    const locale = navigator.language;
+    // const locale = navigator.language;
     // console.log(locale);
 
-    labelDate.textContent = new Intl.DateTimeFormat(locale, options).format(
-      now
-    );
+    labelDate.textContent = new Intl.DateTimeFormat(
+      currentAccount.locale,
+      options
+    ).format(now);
 
     // const now = new Date();
     // const day = `${now.getDate()}`.padStart(2, 0);
