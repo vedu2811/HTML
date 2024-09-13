@@ -25,8 +25,8 @@ const account1 = {
     "2024-09-11T23:36:17.929Z",
     "2024-09-13T10:51:36.790Z",
   ],
-  currency: "EUR",
-  locale: "en-GB", // de-DE
+  currency: "INR",
+  locale: "en-IN", // de-DE
 };
 
 const account2 = {
@@ -112,13 +112,18 @@ const displayMovements = function (acc, sort = false) {
     const date = new Date(acc.movementsDates[i]);
     const displayDates = formatMovementDate(date, acc.locale);
 
+    const formattedMov = new Intl.NumberFormat(acc.locale, {
+      style: "currency",
+      currency: acc.currency,
+    }).format(mov);
+
     const html = `
       <div class="movements__row">
         <div class="movements__type movements__type--${type}">${
       i + 1
     } ${type}</div>
     <div class="movements__date">${displayDates}</div>
-        <div class="movements__value">${mov.toFixed(2)}€</div>
+        <div class="movements__value">${formattedMov}</div>
       </div>
     `;
 
