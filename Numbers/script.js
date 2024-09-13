@@ -119,17 +119,15 @@ const displayMovements = function (acc, sort = false) {
     const date = new Date(acc.movementsDates[i]);
     const displayDates = formatMovementDate(date, acc.locale);
 
+    const formattedMov = formatCur(mov, acc.locale, acc.currency);
+
     const html = `
       <div class="movements__row">
         <div class="movements__type movements__type--${type}">${
       i + 1
     } ${type}</div>
     <div class="movements__date">${displayDates}</div>
-        <div class="movements__value">${formatCur(
-          mov,
-          acc.locale,
-          acc.currency
-        )}</div>
+        <div class="movements__value">${formattedMov}</div>
       </div>
     `;
 
