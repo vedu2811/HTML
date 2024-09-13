@@ -521,7 +521,7 @@ const num = 2234534.43;
 
 const options = {
   style: "unit",
-  unit: "mile-per-hour",
+  unit: "celsius",
 };
 
 console.log("US: ", new Intl.NumberFormat("en-US", options).format(num));
