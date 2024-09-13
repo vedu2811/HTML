@@ -523,6 +523,7 @@ const options = {
   style: "currency",
   unit: "celsius",
   currency: "EUR",
+  // useGrouping: false,
 };
 
 console.log("US: ", new Intl.NumberFormat("en-US", options).format(num));
