@@ -109,3 +109,12 @@ console.log(link.getAttribute("href"));
 
 // Data Attributes
 console.log(logo.dataset.versionNumber);
+
+// Classes
+logo.classList.add("c", "j");
+logo.classList.remove("c", "j");
+logo.classList.toggle("c");
+logo.classList.contains("c");
+
+// DONT USE EVER
+logo.className = "jonas";
