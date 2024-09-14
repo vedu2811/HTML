@@ -92,3 +92,7 @@ console.log(logo.src);
 console.log(logo.className);
 
 logo.alt = "Beautiful Minimalist Logo";
+
+// Non-Standard Attributes
+console.log(logo.designer); //undefined
+console.log(logo.getAttribute("designer"));
