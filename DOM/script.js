@@ -99,3 +99,6 @@ console.log(logo.getAttribute("designer"));
 
 // Set Attributes
 logo.setAttribute("company", "bankist");
+
+console.log(logo.src);
+console.log(logo.getAttribute("src"));
