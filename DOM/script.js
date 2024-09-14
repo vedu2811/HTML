@@ -76,3 +76,6 @@ message.style.width = "120%";
 
 console.log(message.style.height); // NO OUTPUT
 console.log(message.style.backgroundColor); // rgb output
+
+console.log(getComputedStyle(message).color);
+console.log(getComputedStyle(message).height);
