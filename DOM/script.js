@@ -33,7 +33,7 @@ document.addEventListener("keydown", function (e) {
 //////////////////////////////////////////
 //////////////////////////////////////////
 //////////////////////////////////////////
-
+/*
 console.log(document.documentElement);
 console.log(document.head);
 console.log(document.body);
@@ -118,3 +118,4 @@ logo.classList.contains("c");
 
 // DONT USE EVER
 logo.className = "jonas";
+*/
