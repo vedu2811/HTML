@@ -60,4 +60,5 @@ message.innerHTML = `We use cookies for improved functionality and analytics. <b
 header.append(message);
 // header.append(message.cloneNode(true));
 
-header.before(message);
+// header.before(message);
+header.after(message);
