@@ -96,3 +96,6 @@ logo.alt = "Beautiful Minimalist Logo";
 // Non-Standard Attributes
 console.log(logo.designer); //undefined
 console.log(logo.getAttribute("designer"));
+
+// Set Attributes
+logo.setAttribute("company", "bankist");
