@@ -217,3 +217,8 @@ document.querySelector(".nav").addEventListener("click", function (e) {
   console.log("NAV", e.target, e.currentTarget);
 });
 */
+
+const h1 = document.querySelector("h1");
+
+// Going Downwards: CHILD
+console.log(h1.querySelectorAll(".highlight"));
