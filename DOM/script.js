@@ -68,14 +68,21 @@ btnScrollTo.addEventListener("click", function (e) {
 //////////////////////////////////////////
 // PAGE NAVIGATION
 
-document.querySelectorAll(".nav__link").forEach(function (el) {
-  el.addEventListener("click", function (e) {
-    e.preventDefault();
-    const id = this.getAttribute("href");
-    console.log(id);
+// document.querySelectorAll(".nav__link").forEach(function (el) {
+//   el.addEventListener("click", function (e) {
+//     e.preventDefault();
 
-    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-  });
+//     const id = this.getAttribute("href");
+//     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+//   });
+// });
+
+// Event delegation:
+// 1. Add event listener to common parent element
+// 2. determine what element originated the event
+
+document.querySelector(".nav__links").addEventListener("click", function (e) {
+  console.log(e.target);
 });
 
 //////////////////////////////////////////
