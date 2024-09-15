@@ -227,3 +227,7 @@ console.log(h1.children);
 
 h1.firstElementChild.style.color = "white";
 h1.lastElementChild.style.color = "orangered";
+
+// GOING UPWARDS
+console.log(h1.parentNode);
+console.log(h1.parentElement);
