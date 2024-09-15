@@ -251,6 +251,15 @@ slider.style.overflow = "visible";
 
 slides.forEach((s, i) => (s.style.transform = `translateX(${i * 100}%)`));
 
+// Next Slide
+btnRight.addEventListener("click", function () {
+  currentSlide++;
+
+  slides.forEach(
+    (s, i) => (s.style.transform = `translateX(${100 * (i - currentSlide)}%)`)
+  );
+});
+
 //////////////////////////////////////////
 //////////////////////////////////////////
 //////////////////////////////////////////
