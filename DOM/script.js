@@ -257,6 +257,7 @@ const goToSlide = function (slide) {
 };
 goToSlide(0);
 
+// Next Slide
 const nextSlide = function () {
   if (currentSlide === maxSlide - 1) {
     currentSlide = 0;
@@ -266,8 +267,18 @@ const nextSlide = function () {
   goToSlide(currentSlide);
 };
 
-// Next Slide
+// Previous Slide
+const previousSlide = function () {
+  if (currentSlide === 0) {
+    currentSlide = maxSlide - 1;
+  } else {
+    currentSlide--;
+  }
+  goToSlide(currentSlide);
+};
+
 btnRight.addEventListener("click", nextSlide);
+btnLeft.addEventListener("click", previousSlide);
 
 //////////////////////////////////////////
 //////////////////////////////////////////
