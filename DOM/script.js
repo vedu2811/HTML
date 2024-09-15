@@ -151,19 +151,19 @@ window.addEventListener("scroll", function () {
 //////////////////////////////////////////////////////////
 // STICKY NAVIGATION USING INTERSECTION OBSERVER API
 
-const obsCallBack = function (entries, observer) {
-  entries.forEach((entry) => {
-    console.log(entry);
-  });
-};
+// const obsCallBack = function (entries, observer) {
+//   entries.forEach((entry) => {
+//     console.log(entry);
+//   });
+// };
 
-const obsOptions = {
-  root: null,
-  threshold: [0, 0.2],
-};
+// const obsOptions = {
+//   root: null,
+//   threshold: [0, 0.2],
+// };
 
-const observer = new IntersectionObserver(obsCallBack, obsOptions);
-observer.observe(section1);
+// const observer = new IntersectionObserver(obsCallBack, obsOptions);
+// observer.observe(section1);
 
 //////////////////////////////////////////
 //////////////////////////////////////////
