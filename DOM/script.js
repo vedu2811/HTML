@@ -177,7 +177,7 @@ document.querySelector(".nav__link").addEventListener("click", function (e) {
   console.log("LINK", e.target, e.currentTarget);
 
   // STOP PROPAGATION
-  e.stopPropagation();
+  // e.stopPropagation();
 });
 
 document.querySelector(".nav__links").addEventListener("click", function (e) {
@@ -185,7 +185,11 @@ document.querySelector(".nav__links").addEventListener("click", function (e) {
   console.log("CONTAINER", e.target, e.currentTarget);
 });
 
-document.querySelector(".nav").addEventListener("click", function (e) {
-  this.style.backgroundColor = randomColor();
-  console.log("NAV", e.target, e.currentTarget);
-});
+document.querySelector(".nav").addEventListener(
+  "click",
+  function (e) {
+    this.style.backgroundColor = randomColor();
+    console.log("NAV", e.target, e.currentTarget);
+  },
+  true
+);
