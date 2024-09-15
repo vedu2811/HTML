@@ -136,6 +136,7 @@ nav.addEventListener("mouseout", handleHover.bind(1));
 
 //////////////////////////////////////////
 // STICKY NAVIGATION
+/*
 const initialCoords = section1.getBoundingClientRect();
 console.log(initialCoords);
 
@@ -145,6 +146,10 @@ window.addEventListener("scroll", function () {
   if (window.scrollY > initialCoords.top) nav.classList.add("sticky");
   else nav.classList.remove("sticky");
 });
+*/
+
+//////////////////////////////////////////////////////////
+// STICKY NAVIGATION USING INTERSECTION OBSERVER API
 
 //////////////////////////////////////////
 //////////////////////////////////////////
