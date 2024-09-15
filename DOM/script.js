@@ -488,8 +488,8 @@ window.addEventListener("load", function (e) {
   console.log("Page Fully Loaded", e);
 });
 
-window.addEventListener("beforeunload", function (e) {
-  e.preventDefault();
-  console.log(e);
-  e.returnValue = "";
-});
+// window.addEventListener("beforeunload", function (e) {
+//   e.preventDefault();
+//   console.log(e);
+//   e.returnValue = "";
+// });
