@@ -208,6 +208,17 @@ allSections.forEach((sect) => {
 });
 
 //////////////////////////////////////////
+// Lazy Loading Images
+
+const imgTargets = document.querySelectorAll("img[data-src]");
+console.log(imgTargets);
+
+const loadImg = function (entries, observer) {};
+
+const imgObserver = new IntersectionObserver(loadImg, {});
+imgObserver.observe(imgTargets);
+
+//////////////////////////////////////////
 //////////////////////////////////////////
 //////////////////////////////////////////
 /*
