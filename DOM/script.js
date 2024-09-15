@@ -107,6 +107,11 @@ tabsContainer.addEventListener("click", function (e) {
   // Active Tab
   tabs.forEach((t) => t.classList.remove("operations__tab--active"));
   clicked.classList.add("operations__tab--active");
+
+  // Active Content area
+  document
+    .querySelector(`.operations__content--${clicked.dataset.tab}`)
+    .classList.add("operations__content--active");
 });
 
 //////////////////////////////////////////
