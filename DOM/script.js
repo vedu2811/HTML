@@ -204,7 +204,7 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 });
 allSections.forEach((sect) => {
   sectionObserver.observe(sect);
-  sect.classList.add("section--hidden");
+  // sect.classList.add("section--hidden");
 });
 
 //////////////////////////////////////////
@@ -236,6 +236,12 @@ const imgObserver = new IntersectionObserver(loadImg, {
 });
 
 imgTargets.forEach((img) => imgObserver.observe(img));
+
+//////////////////////////////////////////
+// SLIDER
+const slides = document.querySelectorAll(".slide");
+
+slides.forEach((s, i) => (s.style.transform = `translateX(${i * 100}%)`));
 
 //////////////////////////////////////////
 //////////////////////////////////////////
