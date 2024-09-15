@@ -211,11 +211,11 @@ allSections.forEach((sect) => {
 // Lazy Loading Images
 
 const imgTargets = document.querySelectorAll("img[data-src]");
-console.log(imgTargets);
+// console.log(imgTargets);
 
 const loadImg = function (entries, observer) {
   const [entry] = entries;
-  console.log(entry);
+  // console.log(entry);
 
   if (!entry.isIntersecting) return;
 
@@ -225,6 +225,8 @@ const loadImg = function (entries, observer) {
   entry.target.addEventListener("load", function () {
     entry.target.classList.remove("lazy-img");
   });
+
+  observer.unobserve(entry.target);
 };
 
 const imgObserver = new IntersectionObserver(loadImg, {
