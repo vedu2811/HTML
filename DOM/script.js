@@ -117,6 +117,15 @@ tabsContainer.addEventListener("click", function (e) {
 
 //////////////////////////////////////////
 // MENU FADE ANIMATION
+nav.addEventListener("mouseover", function (e) {
+  if (e.target.classList.contains("nav__link")) {
+    const link = e.target;
+    const siblings = link.closest(".nav").querySelector(".nav__link");
+    const logo = link.closest(".nav").querySelector("img");
+  }
+});
+
+// nav.addEventListener("mouseout", function (e) {});
 
 //////////////////////////////////////////
 //////////////////////////////////////////
