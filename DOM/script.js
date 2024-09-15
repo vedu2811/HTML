@@ -275,6 +275,7 @@ const goToSlide = function (slide) {
   slides.forEach(
     (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
   );
+  activeSlide(slide);
 };
 goToSlide(0);
 
