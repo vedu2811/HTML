@@ -165,7 +165,6 @@ setTimeout(() => h1.removeEventListener("mouseenter", alertH1), 3000);
 // h1.onmouseenter = function (e) {
 //   alert("onmouseenter: Great! You are reading the heading :D");
 // };
-*/
 
 const randomInt = (min, max) =>
   Math.floor(Math.random() * (max - min + 1) + min);
@@ -185,11 +184,8 @@ document.querySelector(".nav__links").addEventListener("click", function (e) {
   console.log("CONTAINER", e.target, e.currentTarget);
 });
 
-document.querySelector(".nav").addEventListener(
-  "click",
-  function (e) {
-    this.style.backgroundColor = randomColor();
-    console.log("NAV", e.target, e.currentTarget);
-  },
-  true
-);
+document.querySelector(".nav").addEventListener("click", function (e) {
+  this.style.backgroundColor = randomColor();
+  console.log("NAV", e.target, e.currentTarget);
+});
+*/
