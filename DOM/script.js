@@ -167,7 +167,7 @@ window.addEventListener("scroll", function () {
 
 const header = document.querySelector(".header");
 const navHeight = nav.getBoundingClientRect().height;
-console.log(navHeight);
+// console.log(navHeight);
 
 const stickyNav = function (entries) {
   const [entry] = entries;
@@ -183,6 +183,14 @@ const headerObserver = new IntersectionObserver(stickyNav, {
   rootMargin: `-${navHeight}px`,
 });
 headerObserver.observe(header);
+
+//////////////////////////////////////////
+// REVEAL SECTIONS
+const allSections = document.querySelectorAll(".section");
+
+const revealSection = function (entries, observer) {};
+
+const sectionObserver = new IntersectionObserver(revealSection, {});
 
 //////////////////////////////////////////
 //////////////////////////////////////////
