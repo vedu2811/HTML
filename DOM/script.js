@@ -213,7 +213,12 @@ allSections.forEach((sect) => {
 const imgTargets = document.querySelectorAll("img[data-src]");
 console.log(imgTargets);
 
-const loadImg = function (entries, observer) {};
+const loadImg = function (entries, observer) {
+  const [entry] = entries;
+  console.log(entry);
+
+  if (!entry.isIntersecting) return;
+};
 
 const imgObserver = new IntersectionObserver(loadImg, {
   root: null,
