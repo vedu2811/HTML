@@ -191,6 +191,10 @@ const allSections = document.querySelectorAll(".section");
 const revealSection = function (entries, observer) {};
 
 const sectionObserver = new IntersectionObserver(revealSection, {});
+allSections.forEach((sect) => {
+  sectionObserver.observe(sect);
+  sect.classList.add("section--hidden");
+});
 
 //////////////////////////////////////////
 //////////////////////////////////////////
