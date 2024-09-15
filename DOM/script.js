@@ -222,3 +222,4 @@ const h1 = document.querySelector("h1");
 
 // Going Downwards: CHILD
 console.log(h1.querySelectorAll(".highlight"));
+console.log(h1.childNodes);
