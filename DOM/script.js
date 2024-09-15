@@ -82,11 +82,12 @@ btnScrollTo.addEventListener("click", function (e) {
 // 2. determine what element originated the event
 
 document.querySelector(".nav__links").addEventListener("click", function (e) {
-  console.log(e.target);
+  e.preventDefault();
 
   // Matching Strategy
   if (e.target.classList.contains("nav__link")) {
-    console.log("LINK");
+    const id = e.target.getAttribute("href");
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }
 });
 
