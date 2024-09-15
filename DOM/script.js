@@ -257,15 +257,17 @@ const goToSlide = function (slide) {
 };
 goToSlide(0);
 
-// Next Slide
-btnRight.addEventListener("click", function () {
+const nextSlide = function () {
   if (currentSlide === maxSlide - 1) {
     currentSlide = 0;
   } else {
     currentSlide++;
   }
   goToSlide(currentSlide);
-});
+};
+
+// Next Slide
+btnRight.addEventListener("click", nextSlide);
 
 //////////////////////////////////////////
 //////////////////////////////////////////
