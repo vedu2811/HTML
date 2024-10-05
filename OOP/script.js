@@ -16,3 +16,8 @@ console.log(vedant);
 const matilda = new Person("Matilda", 2017);
 const jack = new Person("Jack", 2011);
 console.log(matilda, jack);
+
+const jalan = "jalan";
+
+console.log(vedant instanceof Person);
+console.log(jalan instanceof Person);
