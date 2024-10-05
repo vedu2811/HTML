@@ -1,8 +1,14 @@
 "use strict";
 
 const Person = function (firstName, birthYear) {
+  // Instance Properties..
   this.firstName = firstName;
   this.birthYear = birthYear;
+
+  // NEVER DO THIS
+  this.calcAge = function () {
+    console.log(2024 - this.birthYear);
+  };
 };
 
 const vedant = new Person("Vedant", 2003);
