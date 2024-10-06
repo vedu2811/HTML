@@ -39,3 +39,6 @@ vedant.calcAge();
 
 console.log(vedant.__proto__);
 console.log(vedant.__proto__ === Person.prototype);
+
+console.log(Person.prototype.isPrototypeOf(vedant));
+console.log(Person.prototype.isPrototypeOf(Person));
