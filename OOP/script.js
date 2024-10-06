@@ -27,3 +27,10 @@ const jalan = "jalan";
 
 console.log(vedant instanceof Person);
 console.log(jalan instanceof Person);
+
+// Prototypes
+console.log(Person.prototype);
+
+Person.prototype.calcAge = function () {
+  console.log(2024 - this.birthYear);
+};
