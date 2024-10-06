@@ -34,3 +34,5 @@ console.log(Person.prototype);
 Person.prototype.calcAge = function () {
   console.log(2024 - this.birthYear);
 };
+
+vedant.calcAge();
