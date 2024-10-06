@@ -42,3 +42,6 @@ console.log(vedant.__proto__ === Person.prototype);
 
 console.log(Person.prototype.isPrototypeOf(vedant));
 console.log(Person.prototype.isPrototypeOf(Person));
+
+Person.prototype.species = "Homo Sapiens";
+console.log(vedant.species, matilda.species);
