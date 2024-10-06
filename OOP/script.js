@@ -45,3 +45,6 @@ console.log(Person.prototype.isPrototypeOf(Person));
 
 Person.prototype.species = "Homo Sapiens";
 console.log(vedant.species, matilda.species);
+
+console.log(vedant.hasOwnProperty("firstName"));
+console.log(vedant.hasOwnProperty("species"));
