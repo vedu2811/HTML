@@ -1,5 +1,6 @@
 "use strict";
 
+/*
 const Person = function (firstName, birthYear) {
   // Instance Properties..
   this.firstName = firstName;
@@ -186,3 +187,4 @@ console.log(account.latest);
 
 account.latest = 50;
 console.log(account.movements);
+*/
