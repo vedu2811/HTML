@@ -187,7 +187,6 @@ console.log(account.latest);
 
 account.latest = 50;
 console.log(account.movements);
-*/
 
 const PersonProto = {
   calcAge() {
@@ -210,3 +209,7 @@ console.log(vedant.__proto__ === PersonProto);
 const sarah = Object.create(PersonProto);
 sarah.init("Sarah", 1981);
 sarah.calcAge();
+*/
+
+/////////////////////////////////////////
+// Coding Challenge 2
