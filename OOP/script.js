@@ -191,8 +191,11 @@ console.log(account.movements);
 
 const PersonProto = {
   calcAge() {
-    console.log(2034 - this.birthYear);
+    console.log(2024 - this.birthYear);
   },
 };
 const vedant = Object.create(PersonProto);
 console.log(vedant);
+vedant.name = "Vedant";
+vedant.birthYear = 2003;
+vedant.calcAge();
