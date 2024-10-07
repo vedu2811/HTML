@@ -135,3 +135,8 @@ console.log(vedant.__proto__ === PersonCl.prototype);
 //   console.log(`Hey ${this.firstName}`);
 // };
 vedant.greet();
+
+// IMPORTANT Points about Classes
+// 1. Classes are NOT Hoisted
+// 2. Classes are first-class citizens
+// 3. Classes are executed in strict mode
