@@ -106,4 +106,7 @@ merz.brake();
 // CLASSES IN ES6
 
 // class expression
-const PersonCl = class {};
+// const PersonCl = class {};
+
+// class DECLRATION
+class PersonCl {}
