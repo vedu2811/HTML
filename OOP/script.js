@@ -101,7 +101,6 @@ bmw.brake();
 const merz = new Car("Mercedes", 95);
 merz.accelerate();
 merz.brake();
-*/
 
 // CLASSES IN ES6
 
@@ -140,3 +139,4 @@ vedant.greet();
 // 1. Classes are NOT Hoisted
 // 2. Classes are first-class citizens
 // 3. Classes are executed in strict mode
+*/
