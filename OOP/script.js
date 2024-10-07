@@ -209,7 +209,6 @@ console.log(vedant.__proto__ === PersonProto);
 const sarah = Object.create(PersonProto);
 sarah.init("Sarah", 1981);
 sarah.calcAge();
-*/
 
 /////////////////////////////////////////
 // Coding Challenge 2
@@ -245,3 +244,4 @@ ford.brake();
 console.log(ford.speedUS);
 ford.speedUS = 100;
 console.log(ford.speed);
+*/
