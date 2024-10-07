@@ -101,7 +101,7 @@ bmw.brake();
 const merz = new Car("Mercedes", 95);
 merz.accelerate();
 merz.brake();
-
+*/
 // CLASSES IN ES6
 
 // class expression
@@ -122,11 +122,16 @@ class PersonCl {
   greet() {
     console.log(`Hey ${this.firstName}`);
   }
+
+  get age() {
+    return 2024 - this.birthYear;
+  }
 }
 
 const vedant = new PersonCl("Vedant", 2003);
 console.log(vedant);
 vedant.calcAge();
+console.log(vedant.age);
 
 console.log(vedant.__proto__ === PersonCl.prototype);
 
@@ -139,7 +144,6 @@ vedant.greet();
 // 1. Classes are NOT Hoisted
 // 2. Classes are first-class citizens
 // 3. Classes are executed in strict mode
-*/
 
 const account = {
   owner: "Jonas",
