@@ -102,3 +102,8 @@ const merz = new Car("Mercedes", 95);
 merz.accelerate();
 merz.brake();
 */
+
+// CLASSES IN ES6
+
+// class expression
+const PersonCl = class {};
