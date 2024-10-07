@@ -58,8 +58,13 @@ console.log(vedant.__proto__.__proto__.__proto__); //NULL
 
 console.dir(Person.prototype.constructor);
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+const arr = [1, 2, 3, 3, 6, 6, 1, 1];
 console.log(arr.__proto__);
 console.log(arr.__proto__ === Array.prototype);
 
 console.log(arr.__proto__.__proto__);
+
+Array.prototype.unique = function () {
+  return [...new Set(this)];
+};
+console.log(arr.unique());
