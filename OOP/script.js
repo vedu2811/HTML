@@ -213,3 +213,24 @@ sarah.calcAge();
 
 /////////////////////////////////////////
 // Coding Challenge 2
+
+class Car {
+  constructor(name, speed) {
+    this.name = name;
+    this.speed = speed;
+  }
+
+  accelerate() {
+    this.speed += 10;
+    console.log(`${this.name} is going at ${this.speed}`);
+  }
+
+  brake() {
+    this.speed -= 5;
+    console.log(`${this.name} is going at ${this.speed}`);
+  }
+}
+
+const ford = new Car("Ford", 120);
+ford.accelerate();
+ford.brake();
