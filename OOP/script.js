@@ -72,7 +72,6 @@ console.log(arr.unique());
 
 const h1 = document.querySelector("h1");
 console.dir((x) => x + 1);
-*/
 
 ////////////////////////////////////////////////
 // Coding challenge 1
@@ -102,3 +101,4 @@ bmw.brake();
 const merz = new Car("Mercedes", 95);
 merz.accelerate();
 merz.brake();
+*/
