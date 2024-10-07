@@ -1,6 +1,5 @@
 "use strict";
 
-/*
 const Person = function (firstName, birthYear) {
   // Instance Properties..
   this.firstName = firstName;
@@ -28,6 +27,11 @@ const jalan = "jalan";
 
 console.log(vedant instanceof Person);
 console.log(jalan instanceof Person);
+
+Person.hey = function () {
+  console.log("Hey THERE...");
+};
+Person.hey();
 
 // Prototypes
 console.log(Person.prototype);
@@ -101,7 +105,7 @@ bmw.brake();
 const merz = new Car("Mercedes", 95);
 merz.accelerate();
 merz.brake();
-*/
+
 // CLASSES IN ES6
 
 // class expression
@@ -137,17 +141,17 @@ class PersonCl {
   }
 }
 
-const vedant = new PersonCl("Vedant Jalan", 2003);
-console.log(vedant);
+const vedant2 = new PersonCl("Vedant Jalan", 2003);
+console.log(vedant2);
 vedant.calcAge();
-console.log(vedant.age);
+console.log(vedant2.age);
 
-console.log(vedant.__proto__ === PersonCl.prototype);
+console.log(vedant2.__proto__ === PersonCl.prototype);
 
 // PersonCl.prototype.greet = function () {
 //   console.log(`Hey ${this.firstName}`);
 // };
-vedant.greet();
+vedant2.greet();
 
 // IMPORTANT Points about Classes
 // 1. Classes are NOT Hoisted
