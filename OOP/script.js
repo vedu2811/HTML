@@ -91,3 +91,14 @@ Car.prototype.brake = function () {
   this.speed -= 5;
   console.log(this.speed);
 };
+
+const bmw = new Car("BMW", 120);
+bmw.accelerate();
+bmw.brake();
+bmw.accelerate();
+bmw.accelerate();
+bmw.accelerate();
+bmw.brake();
+const merz = new Car("Mercedes", 95);
+merz.accelerate();
+merz.brake();
