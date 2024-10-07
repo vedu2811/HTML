@@ -188,3 +188,11 @@ console.log(account.latest);
 account.latest = 50;
 console.log(account.movements);
 */
+
+const PersonProto = {
+  calcAge() {
+    console.log(2034 - this.birthYear);
+  },
+};
+const vedant = Object.create(PersonProto);
+console.log(vedant);
