@@ -109,4 +109,12 @@ merz.brake();
 // const PersonCl = class {};
 
 // class DECLRATION
-class PersonCl {}
+class PersonCl {
+  constructor(firstName, birthYear) {
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+  }
+}
+
+const vedant = new PersonCl("Vedant", 2003);
+console.log(vedant);
