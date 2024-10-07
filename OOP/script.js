@@ -131,6 +131,10 @@ class PersonCl {
     if (name.includes(" ")) this._fullName = name;
     else alert(`${name} is not a full name!`);
   }
+
+  get fullName() {
+    return this._fullName;
+  }
 }
 
 const vedant = new PersonCl("Vedant Jalan", 2003);
