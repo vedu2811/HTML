@@ -115,6 +115,7 @@ class PersonCl {
     this.birthYear = birthYear;
   }
 
+  // Methods get added to .prototype property automatically
   calcAge() {
     console.log(2024 - this.birthYear);
   }
@@ -123,3 +124,5 @@ class PersonCl {
 const vedant = new PersonCl("Vedant", 2003);
 console.log(vedant);
 vedant.calcAge();
+
+console.log(vedant.__proto__ === PersonCl.prototype);
