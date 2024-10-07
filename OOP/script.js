@@ -48,3 +48,10 @@ console.log(vedant.species, matilda.species);
 
 console.log(vedant.hasOwnProperty("firstName"));
 console.log(vedant.hasOwnProperty("species"));
+
+console.log(vedant.__proto__);
+
+// Object Prototype (Top Of Prototype chain)
+console.log(vedant.__proto__.__proto__);
+
+console.log(vedant.__proto__.__proto__.__proto__); //NULL
