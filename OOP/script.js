@@ -167,6 +167,8 @@ vedant2.greet();
 // 2. Classes are first-class citizens
 // 3. Classes are executed in strict mode
 
+PersonCl.hey();
+
 const account = {
   owner: "Jonas",
   movements: [200, 133, 532, 777],
