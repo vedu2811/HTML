@@ -1,5 +1,6 @@
 "use strict";
 
+/*
 const Person = function (firstName, birthYear) {
   // Instance Properties..
   this.firstName = firstName;
@@ -71,3 +72,12 @@ console.log(arr.unique());
 
 const h1 = document.querySelector("h1");
 console.dir((x) => x + 1);
+*/
+
+////////////////////////////////////////////////
+// Coding challenge 1
+
+const Car = function (name, speed) {
+  this.name = name;
+  this.speed = speed;
+};
