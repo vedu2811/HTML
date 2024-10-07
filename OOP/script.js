@@ -120,6 +120,7 @@ class PersonCl {
     this.birthYear = birthYear;
   }
 
+  // INSTANCE METHODS
   // Methods get added to .prototype property automatically
   calcAge() {
     console.log(2024 - this.birthYear);
@@ -140,6 +141,12 @@ class PersonCl {
 
   get fullName() {
     return this._fullName;
+  }
+
+  // STATIC METHOD
+  static hey() {
+    console.log("Hey THERE...");
+    console.log(this);
   }
 }
 
