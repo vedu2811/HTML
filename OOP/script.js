@@ -109,8 +109,8 @@ merz.brake();
 
 // class DECLRATION
 class PersonCl {
-  constructor(firstName, birthYear) {
-    this.firstName = firstName;
+  constructor(fullName, birthYear) {
+    this.fullName = fullName;
     this.birthYear = birthYear;
   }
 
@@ -120,15 +120,20 @@ class PersonCl {
   }
 
   greet() {
-    console.log(`Hey ${this.firstName}`);
+    console.log(`Hey ${this.fullName}`);
   }
 
   get age() {
     return 2024 - this.birthYear;
   }
+
+  set fullName(name) {
+    if (name.includes(" ")) this._fullName = name;
+    else alert(`${name} is not a full name!`);
+  }
 }
 
-const vedant = new PersonCl("Vedant", 2003);
+const vedant = new PersonCl("Vedant Jalan", 2003);
 console.log(vedant);
 vedant.calcAge();
 console.log(vedant.age);
