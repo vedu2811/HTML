@@ -126,3 +126,8 @@ console.log(vedant);
 vedant.calcAge();
 
 console.log(vedant.__proto__ === PersonCl.prototype);
+
+PersonCl.prototype.greet = function () {
+  console.log(`Hey ${this.firstName}`);
+};
+vedant.greet();
