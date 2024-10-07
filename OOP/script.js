@@ -140,3 +140,12 @@ vedant.greet();
 // 2. Classes are first-class citizens
 // 3. Classes are executed in strict mode
 */
+
+const account = {
+  owner: "Jonas",
+  movements: [200, 133, 532, 777],
+
+  get latest() {
+    return this.movements.slice(-1).pop();
+  },
+};
