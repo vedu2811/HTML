@@ -149,3 +149,5 @@ const account = {
     return this.movements.slice(-1).pop();
   },
 };
+
+console.log(account.latest);
