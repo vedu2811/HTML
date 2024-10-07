@@ -30,8 +30,10 @@ console.log(jalan instanceof Person);
 
 Person.hey = function () {
   console.log("Hey THERE...");
+  console.log(this);
 };
 Person.hey();
+// jonas.hey();
 
 // Prototypes
 console.log(Person.prototype);
