@@ -263,5 +263,10 @@ const Student = function (firstName, birthYear, course) {
   this.birthYear = birthYear;
   this.course = course;
 };
+
+Student.prototype.intro = function () {
+  console.log(`My name is ${this.firstName} and I study ${this.course}`);
+};
 const vedant = new Student("Vedant", 2003, "CSE");
 console.log(vedant);
+vedant.intro();
