@@ -245,3 +245,15 @@ console.log(ford.speedUS);
 ford.speedUS = 100;
 console.log(ford.speed);
 */
+
+///////////////////////////////////////////////
+// Inheritance between Classes: Constructor fxns
+
+const Person = function (firstName, birthYear) {
+  this.firstName = firstName;
+  this.birthYear = birthYear;
+};
+
+Person.prototype.calcAge = function () {
+  console.log(2024 - this.birthYear);
+};
