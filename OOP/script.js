@@ -257,3 +257,11 @@ const Person = function (firstName, birthYear) {
 Person.prototype.calcAge = function () {
   console.log(2024 - this.birthYear);
 };
+
+const Student = function (firstName, birthYear, course) {
+  this.firstName = firstName;
+  this.birthYear = birthYear;
+  this.course = course;
+};
+const vedant = new Student("Vedant", 2003, "CSE");
+console.log(vedant);
