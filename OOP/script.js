@@ -282,7 +282,6 @@ console.log(vedant instanceof Object);
 
 Student.prototype.constructor = Student;
 console.dir(Student.prototype.constructor);
-*/
 
 ////////////////////////////////////////////////////////
 // Coding challenge 3
@@ -324,3 +323,4 @@ EV.prototype.accelerate = function () {
 const tesla = new EV("Tesla", 120, 23);
 tesla.chargeBattery(63);
 tesla.accelerate();
+*/
