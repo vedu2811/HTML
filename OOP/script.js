@@ -283,3 +283,16 @@ console.log(vedant instanceof Object);
 Student.prototype.constructor = Student;
 console.dir(Student.prototype.constructor);
 */
+
+////////////////////////////////////////////////////////
+// Coding challenge 3
+
+const Car = function (make, speed) {
+  this.make = make;
+  this.speed = speed;
+};
+
+const EV = function (make, speed, charge) {
+  Car.call(this, make, speed);
+  this.charge = charge;
+};
