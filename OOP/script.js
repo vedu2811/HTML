@@ -371,3 +371,5 @@ class StudentCl extends PersonCl {
     this.course = course;
   }
 }
+
+const vedant = new StudentCl("Vedant Jalan", 2003, "CSE");
