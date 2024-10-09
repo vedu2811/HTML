@@ -272,3 +272,4 @@ Student.prototype.intro = function () {
 const vedant = new Student("Vedant", 2003, "CSE");
 console.log(vedant);
 vedant.intro();
+vedant.calcAge();
