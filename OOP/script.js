@@ -280,3 +280,6 @@ console.log(vedant.__proto__.__proto__);
 console.log(vedant instanceof Student);
 console.log(vedant instanceof Person);
 console.log(vedant instanceof Object);
+
+Student.prototype.constructor = Student;
+console.dir(Student.prototype.constructor);
