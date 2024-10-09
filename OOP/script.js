@@ -424,6 +424,14 @@ class Account {
 
     console.log(`Thanks for opening a new Account, ${owner}`);
   }
+
+  deposit(val) {
+    this.movements.push(val);
+  }
+
+  withdrawal(val) {
+    this.deposit(-val);
+  }
 }
 
 const acc1 = new Account("Vedant", "INR", 2811);
