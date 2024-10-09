@@ -263,6 +263,9 @@ const Student = function (firstName, birthYear, course) {
   this.course = course;
 };
 
+// Linking Prototypes
+Student.prototype = Object.create(Person.prototype);
+
 Student.prototype.intro = function () {
   console.log(`My name is ${this.firstName} and I study ${this.course}`);
 };
