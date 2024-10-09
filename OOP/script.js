@@ -419,6 +419,10 @@ class Account {
     this.owner = owner;
     this.currency = currency;
     this.pin = pin;
+    this.movements = [];
+    this.locale = navigator.language;
+
+    console.log(`Thanks for opening a new Account, ${owner}`);
   }
 }
 
