@@ -447,16 +447,19 @@ class Account {
 
   deposit(val) {
     this.#movements.push(val);
+    return this;
   }
 
   withdraw(val) {
     this.deposit(-val);
+    return this;
   }
 
   requestLoan(val) {
     if (this._approveLoan) {
       this.deposit(val);
       console.log("Loan Approved");
+      return this;
     }
   }
 
@@ -487,3 +490,7 @@ console.log(acc1);
 // console.log(acc1.#pin);
 
 Account.hello();
+
+// CHAINING
+acc1.deposit(300).deposit(500).withdraw(35).requestLoan(25000).withdraw(4000);
+console.log(acc1.getMovements());
