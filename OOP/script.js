@@ -398,4 +398,10 @@ const PersonProto = {
   },
 };
 
-const vedant = Object.create(PersonProto);
+// const vedant = Object.create(PersonProto);
+
+const StudentProto = Object.create(PersonProto);
+
+const vedant = Object.create(StudentProto);
+vedant.init("Vedant", 2003);
+vedant.calcAge();
