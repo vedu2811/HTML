@@ -524,20 +524,28 @@ class CarCl {
 }
 
 class EVCl extends CarCl {
+  #charge;
   constructor(make, speed, charge) {
     super(make, speed);
-    this.charge = charge;
+    this.#charge = charge;
   }
 
   chargeBattery(chargeTo) {
-    this.charge = chargeTo;
+    this.#charge = chargeTo;
   }
 
   accelerate() {
     this.speed += 20;
-    this.charge--;
+    this.#charge--;
     console.log(
-      `${this.make} going at ${this.speed} km/h, with a charge of ${this.charge}%`
+      `${this.make} going at ${this.speed} km/h, with a charge of ${
+        this.#charge
+      }%`
     );
   }
 }
+
+const rivian = new EVCl("Rivian", 120, 23);
+rivian.accelerate();
+rivian.chargeBattery(30);
+rivian.accelerate();
