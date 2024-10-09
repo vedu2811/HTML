@@ -382,7 +382,6 @@ class StudentCl extends PersonCl {
 const vedant = new StudentCl("Vedant Jalan", 2003, "CSE");
 vedant.introduce();
 vedant.calcAge();
-*/
 
 /////////////////////////////////////////////////
 // Inheritance between classes: Object.create
@@ -413,3 +412,4 @@ const vedant = Object.create(StudentProto);
 vedant.init("Vedant", 2003, "CSE");
 vedant.introduce();
 vedant.calcAge();
+*/
