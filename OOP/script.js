@@ -499,19 +499,19 @@ console.log(acc1.getMovements());
 // Coding Challenge 4
 
 class CarCl {
-  constructor(name, speed) {
-    this.name = name;
+  constructor(make, speed) {
+    this.make = make;
     this.speed = speed;
   }
 
   accelerate() {
     this.speed += 10;
-    console.log(`${this.name} is going at ${this.speed}`);
+    console.log(`${this.make} is going at ${this.speed}`);
   }
 
   brake() {
     this.speed -= 5;
-    console.log(`${this.name} is going at ${this.speed}`);
+    console.log(`${this.make} is going at ${this.speed}`);
   }
 
   get speedUS() {
@@ -520,5 +520,12 @@ class CarCl {
 
   set speedUS(x) {
     this.speed = x * 1.6;
+  }
+}
+
+class EVCl extends CarCl {
+  constructor(make, speed, charge) {
+    super(make, speed);
+    this.charge = charge;
   }
 }
