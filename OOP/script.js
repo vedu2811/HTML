@@ -418,6 +418,7 @@ vedant.calcAge();
 // Private Fields
 // Public Methods
 // Private Methods
+// There is also static version of all these..
 
 class Account {
   // Public Fields
@@ -459,6 +460,10 @@ class Account {
     }
   }
 
+  static hello() {
+    console.log("Hello");
+  }
+
   // Private Methods
   // #approveLoan(val){
   _approveLoan(val) {
@@ -480,3 +485,5 @@ console.log(acc1);
 
 // console.log(acc1.#movements);
 // console.log(acc1.#pin);
+
+Account.hello();
