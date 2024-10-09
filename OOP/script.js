@@ -298,3 +298,7 @@ const EV = function (make, speed, charge) {
 };
 
 EV.prototype = Object.create(Car.prototype);
+
+EV.prototype.chargeBattery = function (chargeTo) {
+  this.charge = chargeTo;
+};
