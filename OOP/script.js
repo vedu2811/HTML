@@ -273,3 +273,10 @@ const vedant = new Student("Vedant", 2003, "CSE");
 console.log(vedant);
 vedant.intro();
 vedant.calcAge();
+
+console.log(vedant.__proto__);
+console.log(vedant.__proto__.__proto__);
+
+console.log(vedant instanceof Student);
+console.log(vedant instanceof Person);
+console.log(vedant instanceof Object);
