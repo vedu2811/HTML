@@ -425,12 +425,24 @@ class Account {
     console.log(`Thanks for opening a new Account, ${owner}`);
   }
 
+  // Public Interface
   deposit(val) {
     this.movements.push(val);
   }
 
-  withdrawal(val) {
+  withdraw(val) {
     this.deposit(-val);
+  }
+
+  approveLoan(val) {
+    return true;
+  }
+
+  requestLoan(val) {
+    if (this.approveLoan) {
+      this.deposit(val);
+      console.log("Loan Approved");
+    }
   }
 }
 
@@ -438,5 +450,7 @@ const acc1 = new Account("Vedant", "INR", 2811);
 console.log(acc1);
 
 acc1.deposit(203);
-acc1.withdrawal(111);
+acc1.withdraw(111);
+acc1.requestLoan(1000);
+acc1.approveLoan(1000);
 console.log(acc1);
