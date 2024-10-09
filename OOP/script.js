@@ -383,3 +383,19 @@ const vedant = new StudentCl("Vedant Jalan", 2003, "CSE");
 vedant.introduce();
 vedant.calcAge();
 */
+
+/////////////////////////////////////////////////
+// Inheritance between classes: Object.create
+
+const PersonProto = {
+  calcAge() {
+    console.log(2024 - this.birthYear);
+  },
+
+  init(firstName, birthYear) {
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+  },
+};
+
+const vedant = Object.create(PersonProto);
