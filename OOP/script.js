@@ -370,6 +370,11 @@ class StudentCl extends PersonCl {
     super(fullName, birthYear);
     this.course = course;
   }
+
+  introduce() {
+    console.log(`My name is ${this.fullName} and I study ${this.course}`);
+  }
 }
 
 const vedant = new StudentCl("Vedant Jalan", 2003, "CSE");
+vedant.introduce();
