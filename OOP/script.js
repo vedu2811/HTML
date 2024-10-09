@@ -363,3 +363,11 @@ class PersonCl {
     console.log(this);
   }
 }
+
+class StudentCl extends PersonCl {
+  constructor(fullName, birthYear, course) {
+    // Always use super keyword first..
+    super(fullName, birthYear);
+    this.course = course;
+  }
+}
