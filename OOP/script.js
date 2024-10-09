@@ -425,12 +425,13 @@ class Account {
 
   // Private Fields
   #movements = [];
+  #pin;
 
   constructor(owner, currency, pin) {
     this.owner = owner;
     this.currency = currency;
     // Protected Property
-    this._pin = pin;
+    this.#pin = pin;
     // this._movements = [];
     // this.locale = navigator.language;
 
@@ -475,3 +476,4 @@ console.log(acc1);
 // console.log(acc1.pin);
 
 // console.log(acc1.#movements);
+// console.log(acc1.#pin);
