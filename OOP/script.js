@@ -493,7 +493,6 @@ Account.hello();
 // CHAINING
 acc1.deposit(300).deposit(500).withdraw(35).requestLoan(25000).withdraw(4000);
 console.log(acc1.getMovements());
-*/
 
 //////////////////////////////////////////////////
 // Coding Challenge 4
@@ -550,3 +549,4 @@ class EVCl extends CarCl {
 
 const rivian = new EVCl("Rivian", 120, 23);
 rivian.accelerate().brake().accelerate().chargeBattery(50).accelerate();
+*/
