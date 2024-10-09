@@ -410,5 +410,6 @@ StudentProto.introduce = function () {
 };
 
 const vedant = Object.create(StudentProto);
-vedant.init("Vedant", 2003);
+vedant.init("Vedant", 2003, "CSE");
+vedant.introduce();
 vedant.calcAge();
