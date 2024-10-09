@@ -436,3 +436,7 @@ class Account {
 
 const acc1 = new Account("Vedant", "INR", 2811);
 console.log(acc1);
+
+acc1.deposit(203);
+acc1.withdrawal(111);
+console.log(acc1);
