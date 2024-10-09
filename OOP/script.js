@@ -324,3 +324,42 @@ const tesla = new EV("Tesla", 120, 23);
 tesla.chargeBattery(63);
 tesla.accelerate();
 */
+
+//////////////////////////////////////////////
+// Inheritance between classes: ES6
+
+class PersonCl {
+  constructor(fullName, birthYear) {
+    this.fullName = fullName;
+    this.birthYear = birthYear;
+  }
+
+  // INSTANCE METHODS
+  // Methods get added to .prototype property automatically
+  calcAge() {
+    console.log(2024 - this.birthYear);
+  }
+
+  greet() {
+    console.log(`Hey ${this.fullName}`);
+  }
+
+  get age() {
+    return 2024 - this.birthYear;
+  }
+
+  set fullName(name) {
+    if (name.includes(" ")) this._fullName = name;
+    else alert(`${name} is not a full name!`);
+  }
+
+  get fullName() {
+    return this._fullName;
+  }
+
+  // STATIC METHOD
+  static hey() {
+    console.log("Hey THERE...");
+    console.log(this);
+  }
+}
