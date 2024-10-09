@@ -528,4 +528,16 @@ class EVCl extends CarCl {
     super(make, speed);
     this.charge = charge;
   }
+
+  chargeBattery(chargeTo) {
+    this.charge = chargeTo;
+  }
+
+  accelerate() {
+    this.speed += 20;
+    this.charge--;
+    console.log(
+      `${this.make} going at ${this.speed} km/h, with a charge of ${this.charge}%`
+    );
+  }
 }
