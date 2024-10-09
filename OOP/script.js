@@ -412,7 +412,6 @@ const vedant = Object.create(StudentProto);
 vedant.init("Vedant", 2003, "CSE");
 vedant.introduce();
 vedant.calcAge();
-*/
 
 // Public Fields
 // Private Fields
@@ -494,3 +493,32 @@ Account.hello();
 // CHAINING
 acc1.deposit(300).deposit(500).withdraw(35).requestLoan(25000).withdraw(4000);
 console.log(acc1.getMovements());
+*/
+
+//////////////////////////////////////////////////
+// Coding Challenge 4
+
+class CarCl {
+  constructor(name, speed) {
+    this.name = name;
+    this.speed = speed;
+  }
+
+  accelerate() {
+    this.speed += 10;
+    console.log(`${this.name} is going at ${this.speed}`);
+  }
+
+  brake() {
+    this.speed -= 5;
+    console.log(`${this.name} is going at ${this.speed}`);
+  }
+
+  get speedUS() {
+    return this.speed / 1.6;
+  }
+
+  set speedUS(x) {
+    this.speed = x * 1.6;
+  }
+}
