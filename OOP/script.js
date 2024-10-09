@@ -292,6 +292,16 @@ const Car = function (make, speed) {
   this.speed = speed;
 };
 
+Car.prototype.accelerate = function () {
+  this.speed += 10;
+  console.log(this.speed);
+};
+
+Car.prototype.brake = function () {
+  this.speed -= 5;
+  console.log(this.speed);
+};
+
 const EV = function (make, speed, charge) {
   Car.call(this, make, speed);
   this.charge = charge;
