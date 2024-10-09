@@ -401,6 +401,13 @@ const PersonProto = {
 // const vedant = Object.create(PersonProto);
 
 const StudentProto = Object.create(PersonProto);
+StudentProto.init = function (firstName, birthYear, course) {
+  PersonProto.init.call(this, firstName, birthYear);
+  this.course = course;
+};
+StudentProto.introduce = function () {
+  console.log(`${this.firstName}, ${this.course}`);
+};
 
 const vedant = Object.create(StudentProto);
 vedant.init("Vedant", 2003);
