@@ -244,7 +244,6 @@ ford.brake();
 console.log(ford.speedUS);
 ford.speedUS = 100;
 console.log(ford.speed);
-*/
 
 ///////////////////////////////////////////////
 // Inheritance between Classes: Constructor fxns
@@ -283,3 +282,4 @@ console.log(vedant instanceof Object);
 
 Student.prototype.constructor = Student;
 console.dir(Student.prototype.constructor);
+*/
