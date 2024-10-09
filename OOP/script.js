@@ -414,14 +414,23 @@ vedant.introduce();
 vedant.calcAge();
 */
 
+// Public Fields
+// Private Fields
+// Public Methods
+// Private Methods
+
 class Account {
+  // Public Fields
+  _movements = [];
+  locale = navigator.language;
+
   constructor(owner, currency, pin) {
     this.owner = owner;
     this.currency = currency;
     // Protected Property
     this._pin = pin;
-    this._movements = [];
-    this.locale = navigator.language;
+    // this._movements = [];
+    // this.locale = navigator.language;
 
     console.log(`Thanks for opening a new Account, ${owner}`);
   }
