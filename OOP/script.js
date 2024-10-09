@@ -413,3 +413,14 @@ vedant.init("Vedant", 2003, "CSE");
 vedant.introduce();
 vedant.calcAge();
 */
+
+class Account {
+  constructor(owner, currency, pin) {
+    this.owner = owner;
+    this.currency = currency;
+    this.pin = pin;
+  }
+}
+
+const acc1 = new Account("Vedant", "INR", 2811);
+console.log(acc1);
