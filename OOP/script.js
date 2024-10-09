@@ -438,6 +438,7 @@ class Account {
     console.log(`Thanks for opening a new Account, ${owner}`);
   }
 
+  // Public Methods
   // Public Interface
   getMovements() {
     return this.#movements;
