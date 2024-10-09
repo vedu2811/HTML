@@ -323,7 +323,6 @@ EV.prototype.accelerate = function () {
 const tesla = new EV("Tesla", 120, 23);
 tesla.chargeBattery(63);
 tesla.accelerate();
-*/
 
 //////////////////////////////////////////////
 // Inheritance between classes: ES6
@@ -383,3 +382,4 @@ class StudentCl extends PersonCl {
 const vedant = new StudentCl("Vedant Jalan", 2003, "CSE");
 vedant.introduce();
 vedant.calcAge();
+*/
